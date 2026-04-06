@@ -304,9 +304,8 @@ export default function HomePage() {
       </section>
 
       {/* What We Automate */}
-      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray pt-24 border-b border-[#2cd9fe]">
-        <GrayAccentBorder />
-        <div className="relative z-10 max-w-[1170px] mx-auto px-6">
+      <section className="bg-[#c9c9c9] on-gray pt-24 border-b border-[#2cd9fe]">
+        <div className="max-w-[1170px] mx-auto px-6">
           <h2 className="text-5xl md:text-8xl font-bold text-[#000000] mb-4 text-center">What We Automate</h2>
         </div>
         <div className="flex flex-col gap-0 mt-16 border-t-[6px] border-b-[3px] border-[#2cd9fe]">
