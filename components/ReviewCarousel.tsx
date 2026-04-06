@@ -52,7 +52,7 @@ export default function ReviewCarousel({ reviews, aiSummary }: ReviewCarouselPro
           aria-label="Previous reviews"
           className={`w-10 h-10 flex items-center justify-center border transition-colors ${
             canGoLeft
-              ? 'border-[#2cd9fe] text-[#2cd9fe] hover:bg-[#2cd9fe] hover:text-black'
+              ? 'border-[#2cd9fe] bg-[#2cd9fe] text-black hover:bg-transparent hover:text-[#2cd9fe]'
               : 'border-[#aaaaaa] text-[#aaaaaa] cursor-not-allowed'
           }`}
         >
@@ -66,7 +66,7 @@ export default function ReviewCarousel({ reviews, aiSummary }: ReviewCarouselPro
           aria-label="Next reviews"
           className={`w-10 h-10 flex items-center justify-center border transition-colors ${
             canGoRight
-              ? 'border-[#2cd9fe] text-[#2cd9fe] hover:bg-[#2cd9fe] hover:text-black'
+              ? 'border-[#2cd9fe] bg-[#2cd9fe] text-black hover:bg-transparent hover:text-[#2cd9fe]'
               : 'border-[#aaaaaa] text-[#aaaaaa] cursor-not-allowed'
           }`}
         >
