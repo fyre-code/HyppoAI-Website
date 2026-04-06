@@ -1,11 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import ASPFormAnimation from '@/components/ASPFormAnimation';
-import ASPMGAnimation from '@/components/ASPMGAnimation';
-import ASPEchoAnimation from '@/components/ASPEchoAnimation';
-import ASPGraphicAnimation from '@/components/ASPGraphicAnimation';
-import ASPRankAnimation from '@/components/ASPRankAnimation';
 import { FadeUp, FadeLeft, FadeRight, StaggerList, StaggerItem, HeroText } from '@/components/AnimatedSection';
 
 export const metadata: Metadata = {
@@ -145,11 +140,6 @@ export default function ASPPage() {
                   ) : (
                     <span className="text-[#333] text-sm">Image coming soon</span>
                   )}
-                  {system.title === 'ASP-Form' && <ASPFormAnimation />}
-                  {system.title === 'ASP-MG' && <ASPMGAnimation />}
-                  {system.title === 'ASP-Echo' && <ASPEchoAnimation />}
-                  {system.title === 'ASP-Graphic' && <ASPGraphicAnimation />}
-                  {system.title === 'ASP-Rank' && <ASPRankAnimation />}
                 </div>
               </div>
             </div>
