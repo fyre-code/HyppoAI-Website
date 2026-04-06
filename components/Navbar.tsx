@@ -27,7 +27,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#c9c9c9]">
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white">
           <Link href="/" className="hover:text-[#2cd9fe] transition-colors">Home</Link>
           <Link href="/about" className="hover:text-[#2cd9fe] transition-colors">About</Link>
 
@@ -49,7 +49,7 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block px-4 py-2 text-[#c9c9c9] hover:text-[#2cd9fe] hover:bg-[#111] transition-colors"
+                    className="block px-4 py-2 text-white hover:text-[#2cd9fe] hover:bg-[#111] transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
 
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden text-[#c9c9c9] hover:text-[#2cd9fe]"
+          className="md:hidden text-white hover:text-[#2cd9fe]"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? (
@@ -82,7 +82,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#0a0a0a] border-t border-[#1a1a1a] px-6 py-4 flex flex-col gap-4 text-sm text-[#c9c9c9]">
+        <div className="md:hidden bg-[#0a0a0a] border-t border-[#1a1a1a] px-6 py-4 flex flex-col gap-4 text-sm text-white">
           <Link href="/" onClick={() => setMobileOpen(false)} className="hover:text-[#2cd9fe]">Home</Link>
           <Link href="/about" onClick={() => setMobileOpen(false)} className="hover:text-[#2cd9fe]">About</Link>
           <div>

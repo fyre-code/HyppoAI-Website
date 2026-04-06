@@ -48,12 +48,12 @@ export default function ASPPage() {
       <section className="bg-black min-h-[80vh] flex flex-col justify-center px-6 py-24 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto text-center">
           <HeroText>
-            <h1 className="text-5xl md:text-8xl font-bold text-[#c9c9c9] leading-tight max-w-4xl mb-6 mx-auto">
+            <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-6 mx-auto">
               Auto Social Posting <span className="text-[#2cd9fe] whitespace-nowrap">(ASP-Series)</span>
             </h1>
           </HeroText>
           <HeroText>
-            <p className="text-[#c9c9c9] text-[21px] max-w-2xl mb-10 leading-relaxed mx-auto">
+            <p className="text-white text-[21px] max-w-2xl mb-10 leading-relaxed mx-auto">
               ASP automations run your social media for you by automatically creating and scheduling posts from your content.
             </p>
           </HeroText>
@@ -108,7 +108,7 @@ export default function ASPPage() {
                   </svg>
                 )}
 
-                <h3 className="text-[#c9c9c9] text-[28px] md:text-[48px] font-bold">{system.title}</h3>
+                <h3 className="text-white text-[28px] md:text-[48px] font-bold">{system.title}</h3>
 
                 {/* Icons on the RIGHT */}
                 {system.title === 'ASP-MG' && (
@@ -131,7 +131,7 @@ export default function ASPPage() {
                   </svg>
                 )}
               </div>
-                  <p className="text-[#c9c9c9] text-[21px] leading-relaxed mb-6">{system.description}</p>
+                  <p className="text-white text-[21px] leading-relaxed mb-6">{system.description}</p>
                   <div className="flex justify-center">
                     <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Socials</Link>
                   </div>

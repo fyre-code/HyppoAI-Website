@@ -23,12 +23,12 @@ export default function HyppoCRMPage() {
       <section className="bg-black min-h-[80vh] flex flex-col justify-center px-6 py-24 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto text-center">
           <HeroText>
-            <h1 className="text-5xl md:text-8xl font-bold text-[#c9c9c9] leading-tight max-w-4xl mb-6 mx-auto">
+            <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-6 mx-auto">
               Hyppo<span className="text-[#2cd9fe]">CRM</span>
             </h1>
           </HeroText>
           <HeroText>
-            <p className="text-[#c9c9c9] text-[21px] max-w-2xl mb-10 leading-relaxed mx-auto">
+            <p className="text-white text-[21px] max-w-2xl mb-10 leading-relaxed mx-auto">
               Hyppo<span className="text-[#2cd9fe]">AI</span>'s centralized system for managing leads, jobs, payments, and follow-up — built to eliminate chaos and manual tracking.
             </p>
           </HeroText>
@@ -74,7 +74,7 @@ export default function HyppoCRMPage() {
         <div className="max-w-[1170px] mx-auto">
           <FadeUp>
             <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-4">What's Included</p>
-            <h2 className="text-[28px] md:text-[48px] font-bold text-[#c9c9c9] mb-16">Inside HyppoCRM</h2>
+            <h2 className="text-[28px] md:text-[48px] font-bold text-white mb-16">Inside HyppoCRM</h2>
           </FadeUp>
           <StaggerList className="grid md:grid-cols-2 lg:grid-cols-3 gap-0 border border-[#1a1a1a]">
             {features.map((f, i) => (
@@ -83,8 +83,8 @@ export default function HyppoCRMPage() {
                   <div className="w-8 h-8 border border-[#2cd9fe] flex items-center justify-center mb-4">
                     <div className="w-2 h-2 bg-[#2cd9fe]" />
                   </div>
-                  <h3 className="text-[#c9c9c9] font-bold text-[21px] mb-2">{f.title}</h3>
-                  <p className="text-[#c9c9c9] text-sm leading-relaxed">{f.description}</p>
+                  <h3 className="text-white font-bold text-[21px] mb-2">{f.title}</h3>
+                  <p className="text-white text-sm leading-relaxed">{f.description}</p>
                 </div>
               </StaggerItem>
             ))}
@@ -95,8 +95,8 @@ export default function HyppoCRMPage() {
       <section className="bg-[#0a0a0a] py-20 px-6">
         <div className="max-w-[1170px] mx-auto text-center">
           <FadeUp>
-            <h2 className="text-[28px] md:text-[48px] font-bold text-[#c9c9c9] mb-4">Close More Deals Without More Work</h2>
-            <p className="text-[#c9c9c9] mb-8 max-w-lg mx-auto">
+            <h2 className="text-[28px] md:text-[48px] font-bold text-white mb-4">Close More Deals Without More Work</h2>
+            <p className="text-white mb-8 max-w-lg mx-auto">
               Book a session and we'll show you how HyppoCRM would fit into your current sales process.
             </p>
             <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Get This System</Link>

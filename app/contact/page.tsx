@@ -13,7 +13,7 @@ export default function ContactPage() {
         <div className="max-w-[1170px] mx-auto">
           <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-4">Let's Talk</p>
           <h1 className="text-5xl md:text-8xl font-bold text-white mb-6">Get In Touch</h1>
-          <p className="text-[#c9c9c9] text-[21px] max-w-2xl leading-relaxed">
+          <p className="text-white text-[21px] max-w-2xl leading-relaxed">
             Are you a business owner dealing with growth, automation, or follow-up challenges?
             Book time below for a short working session to see whether we can help and what the
             right next step would be. You'll leave with clarity — whether we're a fit or not.
@@ -46,13 +46,13 @@ export default function ContactPage() {
             <div className="flex flex-col gap-6">
               <div className="border border-[#1a1a1a] p-6">
                 <p className="text-white font-semibold mb-1">Phone</p>
-                <a href="tel:7329623725" className="text-[#c9c9c9] hover:text-[#2cd9fe] transition-colors">
+                <a href="tel:7329623725" className="text-white hover:text-[#2cd9fe] transition-colors">
                   (732) 962-3725
                 </a>
               </div>
               <div className="border border-[#1a1a1a] p-6">
                 <p className="text-white font-semibold mb-1">Email</p>
-                <a href="mailto:growth@hyppohq.ai" className="text-[#c9c9c9] hover:text-[#2cd9fe] transition-colors">
+                <a href="mailto:growth@hyppohq.ai" className="text-white hover:text-[#2cd9fe] transition-colors">
                   growth@hyppohq.ai
                 </a>
               </div>

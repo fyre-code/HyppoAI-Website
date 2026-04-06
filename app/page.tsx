@@ -110,7 +110,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="bg-black min-h-[90vh] flex flex-col items-center justify-center text-center px-6 py-24 border-b border-[#1a1a1a]">
-        <h1 className="text-5xl md:text-8xl font-bold text-[#c9c9c9] leading-tight max-w-4xl mb-10">
+        <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-10">
           Grow Your Business with <span className="text-[#2cd9fe]">AI</span>
         </h1>
         <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Business</Link>
@@ -122,12 +122,12 @@ export default function HomePage() {
           <h2 className="text-5xl md:text-8xl font-bold text-[#2cd9fe] mb-6 text-center">
             The Core Problem
           </h2>
-          <p className="text-[#c9c9c9] text-[28px] md:text-[48px] font-semibold text-center mb-4 leading-tight">
+          <p className="text-white text-[28px] md:text-[48px] font-semibold text-center mb-4 leading-tight">
             Businesses Don't Fail from Lack of Effort — They Fail from Broken Systems
           </p>
           <ul className="flex flex-col gap-4 max-w-2xl mx-auto">
             {coreProblemItems.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-[#c9c9c9] text-[21px]">
+              <li key={item} className="flex items-start gap-3 text-white text-[21px]">
                 <svg className="w-5 h-5 text-[#2cd9fe] mt-0.5 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -291,8 +291,8 @@ export default function HomePage() {
       {/* The HyppoAI Solution */}
       <section className="bg-[#000000] py-24 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto text-center">
-          <h2 className="text-5xl md:text-8xl font-bold text-[#c9c9c9] mb-8">The Hyppo<span className="text-[#2cd9fe]">AI</span> Solution</h2>
-          <p className="text-[#c9c9c9] text-[21px] mx-auto mb-12">
+          <h2 className="text-5xl md:text-8xl font-bold text-white mb-8">The Hyppo<span className="text-[#2cd9fe]">AI</span> Solution</h2>
+          <p className="text-white text-[21px] mx-auto mb-12">
             HyppoAI installs AI-powered automation systems that work 24/7 — posting content, answering calls, following up with leads, and managing reputation without relying on memory, motivation, or manpower.
           </p>
           <a href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Business</a>
@@ -406,7 +406,7 @@ export default function HomePage() {
       {/* Social Proof */}
       <section className="bg-black py-24 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto text-center">
-          <h2 className="text-5xl md:text-8xl font-bold text-[#c9c9c9] mb-6">
+          <h2 className="text-5xl md:text-8xl font-bold text-white mb-6">
             Why Choose Hyppo<span className="text-[#2cd9fe]">AI</span>?
           </h2>
           <ul className="text-left max-w-xl mx-auto mb-12 flex flex-col gap-4">
@@ -420,7 +420,7 @@ export default function HomePage() {
                 <svg className="w-6 h-6 text-[#2cd9fe] shrink-0 mt-1" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                 </svg>
-                <span className="text-[#c9c9c9] text-[21px]">{item}</span>
+                <span className="text-white text-[21px]">{item}</span>
               </li>
             ))}
           </ul>
@@ -455,7 +455,7 @@ export default function HomePage() {
       {/* Founders */}
       <section className="bg-[#0a0a0a] py-24 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto">
-          <h2 className="text-5xl md:text-8xl font-bold text-[#c9c9c9] mb-16 text-center">The Founders</h2>
+          <h2 className="text-5xl md:text-8xl font-bold text-white mb-16 text-center">The Founders</h2>
 
           <div className="grid md:grid-cols-2 gap-0 items-start">
             {founders.map((founder) => (
@@ -473,11 +473,11 @@ export default function HomePage() {
                     </div>
                   )}
                   <div className="flex flex-col justify-center">
-                    <h3 className="text-[21px] md:text-[28px] font-bold text-[#c9c9c9] mb-1">{founder.name}</h3>
+                    <h3 className="text-[21px] md:text-[28px] font-bold text-white mb-1">{founder.name}</h3>
                     <p className="text-[#2cd9fe] text-sm uppercase tracking-widest">{founder.title}</p>
                   </div>
                 </div>
-                <p className="text-[#c9c9c9] leading-relaxed">{founder.bio}</p>
+                <p className="text-white leading-relaxed">{founder.bio}</p>
               </div>
             ))}
           </div>

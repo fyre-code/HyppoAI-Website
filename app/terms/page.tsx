@@ -12,7 +12,7 @@ export default function TermsPage() {
         <h1 className="text-4xl font-bold text-white mb-2">Terms of Service</h1>
         <p className="text-[#555] text-sm mb-12">Hyppo Advertising, Inc — Effective Date: March 26th, 2026</p>
 
-        <div className="flex flex-col gap-10 text-[#c9c9c9] leading-relaxed">
+        <div className="flex flex-col gap-10 text-white leading-relaxed">
 
           {/* SMS Messaging */}
           <div>

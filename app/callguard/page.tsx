@@ -15,12 +15,12 @@ export default function CallGuardPage() {
       <section className="bg-black min-h-[80vh] flex flex-col justify-center px-6 py-24 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto text-center">
           <HeroText>
-            <h1 className="text-5xl md:text-8xl font-bold text-[#c9c9c9] leading-tight max-w-4xl mb-6 mx-auto">
+            <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-6 mx-auto">
               <span className="text-[#2cd9fe]">AI</span> Receptionist
             </h1>
           </HeroText>
           <HeroText>
-            <p className="text-[#c9c9c9] text-[21px] max-w-2xl mb-10 leading-relaxed mx-auto">
+            <p className="text-white text-[21px] max-w-2xl mb-10 leading-relaxed mx-auto">
               HyppoAI installs CallGuard, an AI receptionist system that handles inbound phone calls automatically, so your business never loses jobs due to unanswered calls.
             </p>
           </HeroText>
@@ -103,10 +103,10 @@ export default function CallGuardPage() {
       <section className="bg-[#000000] py-20 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto flex flex-col gap-8">
           <div className="text-center">
-            <h2 className="text-5xl md:text-8xl font-bold text-[#c9c9c9] mb-4">
+            <h2 className="text-5xl md:text-8xl font-bold text-white mb-4">
               Built for Growing Businesses
             </h2>
-            <h2 className="text-[28px] md:text-[48px] font-bold text-[#c9c9c9]">
+            <h2 className="text-[28px] md:text-[48px] font-bold text-white">
               <span className="text-[#2cd9fe]">CallGuard</span> is ideal for businesses that:
             </h2>
           </div>
@@ -118,7 +118,7 @@ export default function CallGuardPage() {
               'Need consistent call handling at scale',
             ].map((item, i) => (
               <FadeRight key={item} delay={i * 0.15}>
-                <li className="flex items-start gap-3 text-[#c9c9c9] text-[21px]">
+                <li className="flex items-start gap-3 text-white text-[21px]">
                   <svg className="w-6 h-6 shrink-0 mt-1" viewBox="0 0 24 24" fill="#2cd9fe">
                     <circle cx="12" cy="12" r="12" />
                     <path d="M6 12l4 4 8-8" stroke="#000000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />

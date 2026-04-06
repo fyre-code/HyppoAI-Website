@@ -60,7 +60,7 @@ export default function ResultsPage() {
           <h1 className="text-5xl md:text-8xl font-bold text-white mb-6">
             We Build Systems So Businesses Don't Break
           </h1>
-          <p className="text-[#c9c9c9] text-[21px] max-w-xl mx-auto mb-10">
+          <p className="text-white text-[21px] max-w-xl mx-auto mb-10">
             These are real clients, real results. No inflated numbers — just what happens when
             you replace manual work with systems.
           </p>
@@ -97,13 +97,13 @@ export default function ResultsPage() {
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
                   <div className="md:w-1/4 shrink-0">
                     <p className="text-white font-bold text-[21px]">{t.name}</p>
-                    {t.company && <p className="text-[#c9c9c9] text-sm">{t.company}</p>}
+                    {t.company && <p className="text-white text-sm">{t.company}</p>}
                     <span className="inline-block mt-2 text-xs text-[#2cd9fe] border border-[#2cd9fe] px-2 py-0.5 uppercase tracking-widest">
                       {t.service}
                     </span>
                   </div>
                   <div className="md:w-3/4">
-                    <p className="text-[#c9c9c9] leading-relaxed text-base">{t.result}</p>
+                    <p className="text-white leading-relaxed text-base">{t.result}</p>
                     {t.stats && (
                       <div className="flex gap-8 mt-6">
                         {t.stats.map((s) => (
@@ -128,7 +128,7 @@ export default function ResultsPage() {
           <h2 className="text-[28px] md:text-[48px] font-bold text-white mb-4">
             Want Results Like These?
           </h2>
-          <p className="text-[#c9c9c9] mb-8 max-w-lg mx-auto">
+          <p className="text-white mb-8 max-w-lg mx-auto">
             Book a working session. We'll show you what a system for your business looks like.
           </p>
           <Link href="/contact" className="btn-primary">Book a Strategy Session</Link>

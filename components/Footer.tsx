@@ -32,7 +32,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <p className="text-xs uppercase tracking-widest text-[#555] mb-4">Contact</p>
-            <div className="flex flex-col gap-2 text-sm text-[#c9c9c9]">
+            <div className="flex flex-col gap-2 text-sm text-white">
               <a href="tel:7329623725" className="flex items-center gap-2 hover:text-[#2cd9fe] transition-colors">
                 <svg className="w-4 h-4 text-[#2cd9fe] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/>
@@ -47,8 +47,8 @@ export default function Footer() {
               </a>
             </div>
             <div className="mt-6 flex flex-col gap-1 text-sm text-[#555]">
-              <Link href="/privacy" className="hover:text-[#c9c9c9] transition-colors">Privacy Policy</Link>
-              <Link href="/terms" className="hover:text-[#c9c9c9] transition-colors">Terms of Service</Link>
+              <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>

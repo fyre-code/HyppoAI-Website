@@ -32,10 +32,10 @@ export default function CustomBuildsPage() {
       <section className="bg-black py-24 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto">
           <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-4">Custom Builds</p>
-          <h1 className="text-5xl md:text-6xl font-bold text-[#c9c9c9] leading-tight max-w-3xl mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight max-w-3xl mb-6">
             When Standard Systems Aren't Enough
           </h1>
-          <p className="text-[#c9c9c9] text-[21px] max-w-2xl leading-relaxed mb-10">
+          <p className="text-white text-[21px] max-w-2xl leading-relaxed mb-10">
             Some businesses have processes that don't fit a pre-built mold. We build custom
             automation systems from the ground up — designed specifically around how your
             business actually works.
@@ -48,15 +48,15 @@ export default function CustomBuildsPage() {
       <section className="bg-[#0a0a0a] py-20 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto">
           <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-4">Examples</p>
-          <h2 className="text-[28px] md:text-[48px] font-bold text-[#c9c9c9] mb-16">What Custom Builds Look Like</h2>
+          <h2 className="text-[28px] md:text-[48px] font-bold text-white mb-16">What Custom Builds Look Like</h2>
           <div className="grid md:grid-cols-2 gap-0 border border-[#1a1a1a]">
             {examples.map((ex, i) => (
               <div key={ex.title} className={`p-10 border-b border-r border-[#1a1a1a] ${i % 2 === 1 ? 'md:border-r-0' : ''} ${i >= examples.length - 2 ? 'border-b-0' : ''}`}>
                 <div className="w-8 h-8 border border-[#2cd9fe] flex items-center justify-center mb-4">
                   <div className="w-2 h-2 bg-[#2cd9fe]" />
                 </div>
-                <h3 className="text-[#c9c9c9] font-bold text-xl mb-3">{ex.title}</h3>
-                <p className="text-[#c9c9c9] leading-relaxed">{ex.description}</p>
+                <h3 className="text-white font-bold text-xl mb-3">{ex.title}</h3>
+                <p className="text-white leading-relaxed">{ex.description}</p>
               </div>
             ))}
           </div>
@@ -67,7 +67,7 @@ export default function CustomBuildsPage() {
       <section className="bg-black py-20 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto">
           <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-4">How It Works</p>
-          <h2 className="text-[28px] md:text-[48px] font-bold text-[#c9c9c9] mb-16">Our Custom Build Process</h2>
+          <h2 className="text-[28px] md:text-[48px] font-bold text-white mb-16">Our Custom Build Process</h2>
           <div className="flex flex-col gap-0 border border-[#1a1a1a]">
             {[
               { step: '01', title: 'Discovery Session', description: 'We spend time understanding your business, your bottlenecks, and what you want automated.' },
@@ -78,8 +78,8 @@ export default function CustomBuildsPage() {
               <div key={s.step} className="flex items-start gap-8 p-10 border-b border-[#1a1a1a] last:border-b-0">
                 <p className="text-[28px] md:text-[48px] font-bold text-[#2cd9fe] opacity-50 shrink-0 w-12">{s.step}</p>
                 <div>
-                  <h3 className="text-[#c9c9c9] font-bold text-xl mb-2">{s.title}</h3>
-                  <p className="text-[#c9c9c9] leading-relaxed">{s.description}</p>
+                  <h3 className="text-white font-bold text-xl mb-2">{s.title}</h3>
+                  <p className="text-white leading-relaxed">{s.description}</p>
                 </div>
               </div>
             ))}
@@ -90,8 +90,8 @@ export default function CustomBuildsPage() {
       {/* CTA */}
       <section className="bg-[#0a0a0a] py-20 px-6">
         <div className="max-w-[1170px] mx-auto text-center">
-          <h2 className="text-[28px] md:text-[48px] font-bold text-[#c9c9c9] mb-4">Have Something Specific in Mind?</h2>
-          <p className="text-[#c9c9c9] mb-8 max-w-lg mx-auto">
+          <h2 className="text-[28px] md:text-[48px] font-bold text-white mb-4">Have Something Specific in Mind?</h2>
+          <p className="text-white mb-8 max-w-lg mx-auto">
             Tell us what you're trying to automate. If it's possible, we'll build it.
           </p>
           <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Start the Conversation</Link>

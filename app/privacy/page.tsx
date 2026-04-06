@@ -12,7 +12,7 @@ export default function PrivacyPage() {
         <h1 className="text-4xl font-bold text-white mb-2">Privacy Policy</h1>
         <p className="text-[#555] text-sm mb-12">HYPPO ADVERTISING, INC — Effective Date: March 26th, 2026</p>
 
-        <div className="prose-hyppo flex flex-col gap-10 text-[#c9c9c9] leading-relaxed">
+        <div className="prose-hyppo flex flex-col gap-10 text-white leading-relaxed">
 
           <div className="border border-[#1a1a1a] p-8 bg-[#0a0a0a]">
             <p className="text-white font-semibold mb-3 uppercase tracking-widest text-xs text-[#2cd9fe]">Important Notice Regarding Text Messaging Data</p>
