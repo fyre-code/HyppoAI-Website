@@ -1,111 +1,85 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { FadeUp, FadeLeft, FadeRight, StaggerList, StaggerItem, HeroText } from '@/components/AnimatedSection';
+import Image from 'next/image';
+import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
+import GrayAccentBorder from '@/components/GrayAccentBorder';
 
 export const metadata: Metadata = {
-  title: 'Website Systems — HyppoAI',
-  description: 'HyppoAI builds high-converting websites integrated with your full automation stack.',
+  title: 'Website Builds — HyppoAI',
+  description: 'HyppoAI builds websites that convert, rank, and connect to automation — not just look good.',
 };
 
-const features = [
-  { title: 'Conversion-First Design', description: 'Every page is built to turn visitors into leads — not just look good.' },
-  { title: 'Automation Integration', description: 'Your site connects directly to your CRM, booking system, and follow-up sequences.' },
-  { title: 'Lead Capture Forms', description: 'Smart forms that route leads into the right pipeline the moment they submit.' },
-  { title: 'Speed & SEO Optimized', description: 'Fast-loading, mobile-first builds that rank well and keep visitors engaged.' },
-  { title: 'Live Chat & AI Assistant', description: 'An AI assistant on your site that answers questions and captures leads — 24/7.' },
-  { title: 'Ongoing Maintenance', description: 'We handle updates, security, and performance so you never have to think about it.' },
+const websiteOptions = [
+  {
+    subheading: 'Simple Landing Page',
+    text: 'A fast, focused landing page designed to capture leads quickly and route them directly into your CRM and automation workflows.',
+    image: '/website-landing.png',
+  },
+  {
+    subheading: 'Fully Optimized Website',
+    text: 'A multi-page website built for speed, search visibility, and conversion, fully connected to CRM, automations, and follow-up systems.',
+    image: '/website-optimized.png',
+  },
+  {
+    subheading: 'Full eCommerce Store',
+    text: 'A complete eCommerce website designed to sell products, process payments, and trigger post-purchase automations automatically.',
+    image: '/website-ecommerce.png',
+  },
 ];
 
 export default function WebsitePage() {
   return (
     <>
+      {/* Hero */}
       <section className="relative overflow-hidden bg-black min-h-[80vh] flex flex-col justify-center px-6 py-12 border-b border-[#1a1a1a]">
         <CircuitBackground />
-        <div className="relative z-10 max-w-[1170px] mx-auto">
-          <HeroText><p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-3">System 05 — Website</p></HeroText>
+        <div className="relative z-10 max-w-[1170px] mx-auto text-center">
           <HeroText>
-            <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-3">
-              Built to <span className="text-[#2cd9fe]">Convert</span>
+            <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight mb-3 mx-auto">
+              <span className="text-[#2cd9fe]">Website</span> Builds
             </h1>
           </HeroText>
           <HeroText>
-            <p className="text-white text-[21px] max-w-2xl mb-6 leading-relaxed">
-              We build websites that are integrated with your full automation stack — not just a
-              digital brochure, but a 24/7 lead capture and sales machine.
+            <p className="text-white text-[21px] max-w-2xl mb-6 leading-relaxed mx-auto">
+              Built to <span className="text-[#2cd9fe]">convert</span>, <span className="text-[#2cd9fe]">rank</span>, and <span className="text-[#2cd9fe]">connect</span> to automation — not just look good.
             </p>
           </HeroText>
           <HeroText>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Get This System</Link>
-              <Link href="/results" className="btn-outline">See Results</Link>
-            </div>
+            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Website</Link>
           </HeroText>
         </div>
-
       </section>
 
-      <section className="bg-[#0a0a0a] py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-[1170px] mx-auto flex flex-col md:flex-row gap-16 items-center">
-          <FadeLeft className="md:w-1/2">
-            <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-4">The Problem</p>
-            <h2 className="text-[28px] md:text-[48px] font-bold text-white mb-6">Your Website Is an Island</h2>
-            <p className="text-white leading-relaxed text-[21px] mb-4">
-              Most business websites collect visitors and do nothing with them. No follow-up, no
-              automation, no integration with your pipeline — just a page that sits there.
-            </p>
-            <p className="text-white leading-relaxed">
-              We build sites that are the front door to your entire automation system — so every
-              visitor becomes a lead, and every lead gets followed up automatically.
-            </p>
-          </FadeLeft>
-          <FadeRight className="md:w-1/2">
-            <div className="border border-[#1a1a1a] p-10 bg-black">
-              <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-6">A Site That Doesn't Convert</p>
-              {['Visitors leave without taking action', 'No connection to your CRM or calendar', 'Leads submitted through a form — and forgotten', 'Slow speed and poor mobile experience lose prospects'].map((item) => (
-                <div key={item} className="flex items-start gap-3 mb-4 text-white">
-                  <svg className="w-4 h-4 text-red-500 mt-1 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                  <span>{item}</span>
-                </div>
-              ))}
-            </div>
-          </FadeRight>
-        </div>
-      </section>
-
-      <section className="bg-black py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-[1170px] mx-auto">
-          <FadeUp>
-            <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-4">What's Included</p>
-            <h2 className="text-[28px] md:text-[48px] font-bold text-white mb-16">Inside the Website System</h2>
-          </FadeUp>
-          <StaggerList className="grid md:grid-cols-2 lg:grid-cols-3 gap-0 border border-[#1a1a1a]">
-            {features.map((f, i) => (
-              <StaggerItem key={f.title}>
-                <div className={`p-8 border-b border-r border-[#1a1a1a] h-full ${i % 3 === 2 ? 'md:border-r-0' : ''}`}>
-                  <div className="w-8 h-8 border border-[#2cd9fe] flex items-center justify-center mb-4">
-                    <div className="w-2 h-2 bg-[#2cd9fe]" />
+      {/* Options */}
+      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray py-20 px-6">
+        <GrayAccentBorder />
+        <div className="relative z-10 max-w-[1170px] mx-auto">
+          <h2 className="text-[28px] md:text-[48px] font-bold text-[#000000] text-center mb-12">
+            See Our Options for Website Builds
+          </h2>
+          <div>
+            {websiteOptions.map((row, i) => {
+              const textRight = i % 2 !== 0;
+              return (
+                <div
+                  key={row.subheading}
+                  className={`grid grid-cols-1 md:grid-cols-2 ${i > 0 ? 'border-t-[6px] border-[#2cd9fe]' : ''}`}
+                >
+                  <div className={`p-10 flex flex-col gap-4 justify-center ${textRight ? 'md:order-last' : ''}`}>
+                    <h3 className="text-[28px] md:text-[48px] font-bold text-[#000000]">{row.subheading}</h3>
+                    <p className="text-[#000000] text-[21px] leading-relaxed">{row.text}</p>
+                    <div>
+                      <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary btn-sm">Automate My Website</Link>
+                    </div>
                   </div>
-                  <h3 className="text-white font-bold text-[21px] mb-2">{f.title}</h3>
-                  <p className="text-white text-sm leading-relaxed">{f.description}</p>
+                  <div className="p-10 flex items-center justify-center">
+                    <Image src={row.image} alt={row.subheading} width={500} height={400} className="object-contain w-full h-auto" />
+                  </div>
                 </div>
-              </StaggerItem>
-            ))}
-          </StaggerList>
-        </div>
-      </section>
-
-      <section className="bg-[#0a0a0a] py-20 px-6">
-        <div className="max-w-[1170px] mx-auto text-center">
-          <FadeUp>
-            <h2 className="text-[28px] md:text-[48px] font-bold text-white mb-4">Turn Your Website Into a System</h2>
-            <p className="text-white mb-8 max-w-lg mx-auto">
-              Book a session and we'll show you what an integrated website build looks like for your business.
-            </p>
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Get This System</Link>
-          </FadeUp>
+              );
+            })}
+          </div>
         </div>
       </section>
     </>
