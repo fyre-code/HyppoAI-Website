@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black py-24 px-6 border-b border-[#1a1a1a]">
+      <section className="bg-black pt-12 pb-24 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto">
           <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight mb-4 text-center">
             About Hyppo<span className="text-[#2cd9fe]">AI</span>
