@@ -53,7 +53,7 @@ export default function ASPPage() {
             </h1>
           </HeroText>
           <HeroText>
-            <p className="text-[#2cd9fe] text-[21px] font-semibold tracking-widest uppercase mb-3">ASP-Series</p>
+            <p className="text-[#2cd9fe] text-[28px] md:text-[48px] font-bold mb-3">ASP-Series</p>
           </HeroText>
           <HeroText>
             <p className="text-white text-[21px] max-w-2xl mb-6 leading-relaxed mx-auto">
