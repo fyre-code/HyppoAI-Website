@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FadeUp, FadeLeft, FadeRight, StaggerList, StaggerItem, HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
+import GrayAccentBorder from '@/components/GrayAccentBorder';
 
 export const metadata: Metadata = {
   title: 'HyppoCRM — HyppoAI',
@@ -40,8 +41,9 @@ export default function HyppoCRMPage() {
         </div>
       </section>
 
-      <section className="bg-[#c9c9c9] on-gray py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-[1170px] mx-auto">
+      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray py-20 px-6 border-b border-[#1a1a1a]">
+        <GrayAccentBorder />
+        <div className="relative z-10 max-w-[1170px] mx-auto">
           <h2 className="text-5xl md:text-8xl font-bold text-[#000000] text-center mb-12">
             Every lead organized. Every follow-up handled. Nothing missed.
           </h2>

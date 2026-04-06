@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ReviewsGrid from '@/components/ReviewsGrid';
 import CircuitBackground from '@/components/CircuitBackground';
+import GrayAccentBorder from '@/components/GrayAccentBorder';
 
 const automationSystems = [
   {
@@ -141,8 +142,9 @@ export default function HomePage() {
       </section>
 
       {/* What Our Clients Say */}
-      <section className="bg-[#c9c9c9] on-gray py-24 px-6">
-        <div className="max-w-[1170px] mx-auto">
+      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray py-24 px-6">
+        <GrayAccentBorder />
+        <div className="relative z-10 max-w-[1170px] mx-auto">
           <h2 className="text-5xl md:text-8xl font-bold text-[#000000] mb-6 text-center">
             What Our Clients Say About Us
           </h2>
@@ -302,8 +304,9 @@ export default function HomePage() {
       </section>
 
       {/* What We Automate */}
-      <section className="bg-[#c9c9c9] on-gray pt-24 border-b border-[#2cd9fe]">
-        <div className="max-w-[1170px] mx-auto px-6">
+      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray pt-24 border-b border-[#2cd9fe]">
+        <GrayAccentBorder />
+        <div className="relative z-10 max-w-[1170px] mx-auto px-6">
           <h2 className="text-5xl md:text-8xl font-bold text-[#000000] mb-4 text-center">What We Automate</h2>
         </div>
         <div className="flex flex-col gap-0 mt-16 border-t-[6px] border-b-[3px] border-[#2cd9fe]">
@@ -490,8 +493,9 @@ export default function HomePage() {
       </section>
 
       {/* Be Good House */}
-      <section className="bg-[#c9c9c9] on-gray py-24 px-6">
-        <div className="max-w-[1170px] mx-auto text-center">
+      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray py-24 px-6">
+        <GrayAccentBorder />
+        <div className="relative z-10 max-w-[1170px] mx-auto text-center">
           <h2 className="text-5xl md:text-8xl font-bold text-[#000000] mb-8">The Be Good House</h2>
           <p className="text-[#000000] text-[21px] max-w-3xl mx-auto mb-12">
             Hyppo Advertising is proud to be the first business to launch from The Be Good House, a live-in incubator for overlooked entrepreneurs, founded by its inaugural scholar, Joseph Sestito III.

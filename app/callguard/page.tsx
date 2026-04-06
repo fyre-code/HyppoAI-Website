@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { FadeUp, FadeRight, HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
+import GrayAccentBorder from '@/components/GrayAccentBorder';
 
 export const metadata: Metadata = {
   title: 'Phone AI CallGuard — HyppoAI',
@@ -33,8 +34,9 @@ export default function CallGuardPage() {
       </section>
 
       {/* What CallGuard Does */}
-      <section className="bg-[#c9c9c9] on-gray py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-[1170px] mx-auto">
+      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray py-20 px-6 border-b border-[#1a1a1a]">
+        <GrayAccentBorder />
+        <div className="relative z-10 max-w-[1170px] mx-auto">
           <h2 className="text-5xl md:text-8xl font-bold text-[#000000] mb-16 text-center">
             What <span className="text-[#2cd9fe]">CallGuard</span> Does
           </h2>
@@ -138,8 +140,9 @@ export default function CallGuardPage() {
 
 
       {/* CTA */}
-      <section className="bg-[#c9c9c9] on-gray py-20 px-6">
-        <div className="max-w-[1170px] mx-auto text-center">
+      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray py-20 px-6">
+        <GrayAccentBorder />
+        <div className="relative z-10 max-w-[1170px] mx-auto text-center">
           <FadeUp>
             <h2 className="text-5xl md:text-8xl font-bold text-[#000000] mb-8">
               Bottom Line: If the phone rings, then <span className="text-[#2cd9fe]">CallGuard</span> answers.

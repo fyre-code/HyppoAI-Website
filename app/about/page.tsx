@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import CircuitBackground from '@/components/CircuitBackground';
+import GrayAccentBorder from '@/components/GrayAccentBorder';
 
 export const metadata: Metadata = {
   title: 'About — HyppoAI',
@@ -62,8 +63,9 @@ export default function AboutPage() {
 
 
       {/* Be Good House */}
-      <section className="bg-[#c9c9c9] on-gray py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-[1170px] mx-auto">
+      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray py-20 px-6 border-b border-[#1a1a1a]">
+        <GrayAccentBorder />
+        <div className="relative z-10 max-w-[1170px] mx-auto">
           <h2 className="text-[28px] md:text-[48px] font-bold text-[#000000] mb-6 text-center">
             Built From The Be Good House
           </h2>
