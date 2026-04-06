@@ -32,7 +32,7 @@ export default function ContactPage() {
         <div className="relative z-10 max-w-[1170px] mx-auto">
           <div className="grid grid-cols-[6px_1fr_6px]">
             <FlowBorderV />
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_6px_1fr]">
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_6px_2fr]">
 
               {/* Left column */}
               <div className="flex flex-col gap-5 items-center text-center p-10">
