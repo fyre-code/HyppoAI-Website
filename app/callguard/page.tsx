@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { FadeUp, FadeRight, HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
+import { FlowBorderV } from '@/components/FlowBorder';
 
 export const metadata: Metadata = {
   title: 'Phone AI CallGuard — HyppoAI',
@@ -40,7 +41,7 @@ export default function CallGuardPage() {
           <h2 className="text-5xl md:text-8xl font-bold text-[#000000] mb-16 text-center">
             What <span className="text-[#2cd9fe]">CallGuard</span> Does
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_6px_1fr_6px_1fr_6px_1fr] gap-0">
             {[
               {
                 icon: (
@@ -87,14 +88,17 @@ export default function CallGuardPage() {
                 subheading: 'Real-Time Alerts',
                 text: 'You or your team are notified instantly when a real opportunity comes in.',
               },
-            ].map((cell) => (
-              <div key={cell.subheading} className="border-r-[6px] border-[#2cd9fe] last:border-r-0 p-8 flex flex-col items-center text-center gap-4">
+            ].map((cell, i) => (
+              <>
+              {i > 0 && <FlowBorderV key={`border-${i}`} className="hidden md:block" />}
+              <div key={cell.subheading} className="p-8 flex flex-col items-center text-center gap-4">
                 <div className="animate-pulse">
                   {cell.icon}
                 </div>
                 <h3 className="text-[#000000] text-[21px] font-bold">{cell.subheading}</h3>
                 <p className="text-[#000000] text-[18px] leading-relaxed">{cell.text}</p>
               </div>
+              </>
             ))}
           </div>
           <div className="flex justify-center mt-12">

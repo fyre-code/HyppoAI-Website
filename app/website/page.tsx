@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
+import { FlowBorderH } from '@/components/FlowBorder';
 
 export const metadata: Metadata = {
   title: 'Website Builds — HyppoAI',
@@ -60,9 +61,10 @@ export default function WebsitePage() {
             {websiteOptions.map((row, i) => {
               const textRight = i % 2 !== 0;
               return (
+                {i > 0 && <FlowBorderH />}
                 <div
                   key={row.subheading}
-                  className={`grid grid-cols-1 md:grid-cols-2 ${i > 0 ? 'border-t-[6px] border-[#2cd9fe]' : ''}`}
+                  className="grid grid-cols-1 md:grid-cols-2"
                 >
                   <div className={`p-10 flex flex-col gap-4 justify-center items-center text-center ${textRight ? 'md:order-last' : ''}`}>
                     <h3 className="text-[28px] md:text-[48px] font-bold text-[#000000]">{row.subheading}</h3>

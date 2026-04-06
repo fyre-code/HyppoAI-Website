@@ -3,6 +3,7 @@ import Image from 'next/image';
 import ReviewsGrid from '@/components/ReviewsGrid';
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
+import { FlowBorderH, FlowBorderV } from '@/components/FlowBorder';
 
 const automationSystems = [
   {
@@ -308,11 +309,13 @@ export default function HomePage() {
         <div className="max-w-[1170px] mx-auto px-6">
           <h2 className="text-5xl md:text-8xl font-bold text-[#000000] mb-4 text-center">What We Automate</h2>
         </div>
-        <div className="flex flex-col gap-0 mt-16 border-t-[6px] border-b-[3px] border-[#2cd9fe]">
+        <FlowBorderH className="mt-16" />
+        <div className="flex flex-col gap-0">
             {automationSystems.map((system, i) => (
+              <>
               <div
                 key={system.href}
-                className={`flex flex-col md:flex-row ${i % 2 === 1 ? 'md:flex-row-reverse' : ''} border-t-[3px] border-b-[3px] border-[#2cd9fe]`}
+                className={`flex flex-col md:flex-row ${i % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
               >
                 {/* Image or color block */}
                 {system.image ? (
@@ -403,6 +406,8 @@ export default function HomePage() {
                   <Link href={system.href} className="btn-primary">{system.cta ?? 'Learn More'}</Link>
                 </div>
               </div>
+              <FlowBorderH />
+              </>
             ))}
         </div>
       </section>
@@ -461,9 +466,11 @@ export default function HomePage() {
         <div className="max-w-[1170px] mx-auto">
           <h2 className="text-5xl md:text-8xl font-bold text-white mb-16 text-center">The Founders</h2>
 
-          <div className="grid md:grid-cols-2 gap-0 items-start">
-            {founders.map((founder) => (
-              <div key={founder.name} className="p-10 md:p-16 md:border-r-[6px] md:border-[#2cd9fe] last:border-r-0 flex flex-col">
+          <div className="grid md:grid-cols-[1fr_6px_1fr] gap-0 items-start">
+            {founders.map((founder, i) => (
+              <>
+              {i > 0 && <FlowBorderV key={`f-border-${i}`} className="hidden md:block" />}
+              <div key={founder.name} className="p-10 md:p-16 flex flex-col">
                 <div className="flex items-center gap-6 mb-6">
                   {founder.image ? (
                     <div className="w-[200px] h-[200px] rounded-full overflow-hidden border-2 border-[#2cd9fe] shrink-0">
@@ -483,6 +490,7 @@ export default function HomePage() {
                 </div>
                 <p className="text-white leading-relaxed">{founder.bio}</p>
               </div>
+              </>
             ))}
           </div>
           <div className="text-center mt-16">

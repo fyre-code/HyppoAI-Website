@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
+import { FlowBorderV } from '@/components/FlowBorder';
 
 export const metadata: Metadata = {
   title: 'About — HyppoAI',
@@ -97,7 +98,7 @@ export default function AboutPage() {
         <div className="max-w-[1170px] mx-auto">
           <h2 className="text-5xl md:text-8xl font-bold text-white mb-16 text-center">The Founders</h2>
 
-          <div className="grid md:grid-cols-2 gap-0 items-start">
+          <div className="grid md:grid-cols-[1fr_6px_1fr] gap-0 items-start">
             {[
               {
                 name: 'Brandon Gosselin',
@@ -111,8 +112,10 @@ export default function AboutPage() {
                 bio: 'Joseph is an MBA Candidate at Florida Atlantic University. Coming from a family of entrepreneurs who inspired him, he co-founded Hyppo with Brandon to help small businesses automate tedious tasks. Joseph is the Inaugural Be Good House Scholar.',
                 image: '/joseph.jpg',
               },
-            ].map((founder) => (
-              <div key={founder.name} className="p-10 md:p-16 md:border-r-[6px] md:border-[#2cd9fe] last:border-r-0 flex flex-col">
+            ].map((founder, i) => (
+              <>
+              {i > 0 && <FlowBorderV key={`f-border-${i}`} className="hidden md:block" />}
+              <div key={founder.name} className="p-10 md:p-16 flex flex-col">
                 <div className="flex items-center gap-6 mb-6">
                   <div className="w-[200px] h-[200px] rounded-full overflow-hidden border-2 border-[#2cd9fe] shrink-0">
                     <Image src={founder.image} alt={founder.name} width={200} height={200} className="object-cover w-full h-full" />
@@ -124,6 +127,7 @@ export default function AboutPage() {
                 </div>
                 <p className="text-white leading-relaxed">{founder.bio}</p>
               </div>
+              </>
             ))}
           </div>
           <div className="text-center mt-16">

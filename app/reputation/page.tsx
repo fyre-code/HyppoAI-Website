@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
+import { FlowBorderV } from '@/components/FlowBorder';
 
 export const metadata: Metadata = {
   title: 'Reputation Management — HyppoAI',
@@ -40,7 +41,7 @@ export default function ReputationPage() {
         <GrayAccentBorder />
         <div className="relative z-10 max-w-[1170px] mx-auto">
           <h2 className="text-[28px] md:text-[48px] font-bold text-[#000000] mb-16 text-center">What it Does</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_6px_1fr_6px_1fr] gap-0">
             {[
               {
                 subheading: 'Increase 5-star reviews',
@@ -68,10 +69,13 @@ export default function ReputationPage() {
                 ),
               },
             ].map((cell, i) => (
-              <div key={cell.subheading} className={`flex flex-col items-center text-center gap-4 p-10 ${i < 2 ? 'border-b md:border-b-0 md:border-r-[6px] border-[#2cd9fe]' : ''}`}>
+              <>
+              {i > 0 && <FlowBorderV key={`border-${i}`} className="hidden md:block" />}
+              <div key={cell.subheading} className="flex flex-col items-center text-center gap-4 p-10">
                 {cell.icon}
                 <h3 className="text-[#000000] text-[21px] font-bold">{cell.subheading}</h3>
               </div>
+              </>
             ))}
           </div>
           <div className="flex justify-center mt-12">

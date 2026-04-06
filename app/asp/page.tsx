@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { FadeUp, FadeLeft, FadeRight, StaggerList, StaggerItem, HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
+import { FlowBorderH } from '@/components/FlowBorder';
 
 export const metadata: Metadata = {
   title: 'Social Media ASP — HyppoAI',
@@ -75,11 +76,12 @@ export default function ASPPage() {
       </section>
 
       {/* ASP Systems Table */}
-      <section className="bg-[#000000] border-t-[6px] border-[#2cd9fe]">
+      <section className="bg-[#000000]">
+        <FlowBorderH />
         {aspSystems.map((system, i) => {
           const imageRight = i % 2 === 0;
           return (
-            <div key={system.title} className="border-t-[3px] border-b-[3px] border-[#2cd9fe] py-10 px-6">
+            <div key={system.title} className="py-10 px-6">
               <div className="max-w-[1170px] mx-auto flex flex-col md:flex-row items-stretch gap-10">
                 <div className={`flex-1 ${imageRight ? 'order-first' : 'order-first md:order-last'}`}>
                   <div className="flex items-center justify-center gap-3 mb-4">
@@ -147,6 +149,7 @@ export default function ASPPage() {
                 </div>
               </div>
             </div>
+            <FlowBorderH />
           );
         })}
       </section>

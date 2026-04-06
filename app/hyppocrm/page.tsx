@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { FadeUp, FadeLeft, FadeRight, StaggerList, StaggerItem, HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
+import { FlowBorderH } from '@/components/FlowBorder';
 
 export const metadata: Metadata = {
   title: 'HyppoCRM — HyppoAI',
@@ -60,7 +61,8 @@ export default function HyppoCRMPage() {
                 image: '/hyppocrm-plus.png',
               },
             ].map((row, i) => (
-              <div key={i} className={`grid grid-cols-1 md:grid-cols-2 ${i === 0 ? 'border-b-[6px] border-[#2cd9fe]' : ''}`}>
+              {i > 0 && <FlowBorderH />}
+              <div key={i} className="grid grid-cols-1 md:grid-cols-2">
                 <div className="p-10 flex flex-col gap-4 justify-center">
                   <h3 className="text-[28px] md:text-[48px] font-bold text-[#000000] text-center">{row.subheading}</h3>
                   <p className="text-[#000000] text-[21px] leading-relaxed">{row.text}</p>
