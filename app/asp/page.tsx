@@ -81,7 +81,9 @@ export default function ASPPage() {
         {aspSystems.map((system, i) => {
           const imageRight = i % 2 === 0;
           return (
-            <div key={system.title} className="py-10 px-6">
+            <div key={system.title}>
+            {i > 0 && <FlowBorderH />}
+            <div className="py-10 px-6">
               <div className="max-w-[1170px] mx-auto flex flex-col md:flex-row items-stretch gap-10">
                 <div className={`flex-1 ${imageRight ? 'order-first' : 'order-first md:order-last'}`}>
                   <div className="flex items-center justify-center gap-3 mb-4">
@@ -149,7 +151,7 @@ export default function ASPPage() {
                 </div>
               </div>
             </div>
-            <FlowBorderH />
+            </div>
           );
         })}
       </section>

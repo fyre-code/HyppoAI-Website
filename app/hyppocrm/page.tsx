@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -61,8 +62,9 @@ export default function HyppoCRMPage() {
                 image: '/hyppocrm-plus.png',
               },
             ].map((row, i) => (
+              <React.Fragment key={i}>
               {i > 0 && <FlowBorderH />}
-              <div key={i} className="grid grid-cols-1 md:grid-cols-2">
+              <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="p-10 flex flex-col gap-4 justify-center">
                   <h3 className="text-[28px] md:text-[48px] font-bold text-[#000000] text-center">{row.subheading}</h3>
                   <p className="text-[#000000] text-[21px] leading-relaxed">{row.text}</p>
@@ -71,6 +73,7 @@ export default function HyppoCRMPage() {
                   <Image src={row.image} alt={String(row.subheading)} width={500} height={400} className="object-contain w-full h-auto" />
                 </div>
               </div>
+              </React.Fragment>
             ))}
           </div>
         </div>
