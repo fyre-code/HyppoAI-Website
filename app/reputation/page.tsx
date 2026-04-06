@@ -22,9 +22,12 @@ export default function ReputationPage() {
       <section className="bg-black min-h-[80vh] flex flex-col justify-center px-6 py-12 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto text-center">
           <HeroText>
-            <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-3 mx-auto">
-              <span className="text-[#2cd9fe]">Reputation</span> Management & Reviews
+            <h1 className="text-5xl md:text-8xl font-bold text-[#2cd9fe] leading-tight mb-1 mx-auto">
+              Reputation
             </h1>
+          </HeroText>
+          <HeroText>
+            <p className="text-white text-[28px] md:text-[48px] font-bold whitespace-nowrap mb-3">Management & Reviews</p>
           </HeroText>
           <HeroText>
             <p className="text-white text-[21px] max-w-2xl mb-6 leading-relaxed mx-auto">
