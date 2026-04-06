@@ -5,6 +5,7 @@ import React from 'react';
 import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import { FlowBorderH } from '@/components/FlowBorder';
+import HeadingAccent from '@/components/HeadingAccent';
 
 export const metadata: Metadata = {
   title: 'Website Builds — HyppoAI',
@@ -55,9 +56,12 @@ export default function WebsitePage() {
       {/* Options */}
       <section className="bg-[#c9c9c9] on-gray py-20 px-6">
         <div className="max-w-[1170px] mx-auto">
-          <h2 className="text-5xl md:text-8xl font-bold text-[#000000] text-center mb-12">
-            See Our Options for Website Builds
-          </h2>
+          <div className="relative mb-12">
+            <HeadingAccent />
+            <h2 className="relative z-10 text-5xl md:text-8xl font-bold text-[#000000] text-center py-8 px-16">
+              See Our Options for Website Builds
+            </h2>
+          </div>
           <div>
             {websiteOptions.map((row, i) => {
               const textRight = i % 2 !== 0;
