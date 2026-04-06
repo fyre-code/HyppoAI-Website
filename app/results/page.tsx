@@ -241,7 +241,6 @@ export default function ResultsPage() {
       {/* Video Testimonials — black section */}
       <section className="bg-[#000000] px-6">
         <div className="max-w-[1170px] mx-auto">
-          <FlowBorderH />
           <div className="grid grid-cols-[6px_1fr_6px]">
             <FlowBorderV />
             <div>
@@ -307,7 +306,6 @@ export default function ResultsPage() {
             </div>
             <FlowBorderV />
           </div>
-          <FlowBorderH />
           <div className="py-16 text-center">
             <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">
               Automate My Business
