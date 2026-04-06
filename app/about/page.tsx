@@ -12,20 +12,20 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black pt-12 pb-24 px-6 border-b border-[#1a1a1a]">
+      <section className="bg-black pt-10 pb-24 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto">
-          <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight mb-4 text-center">
+          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-3 text-center">
             About Hyppo<span className="text-[#2cd9fe]">AI</span>
           </h1>
-          <h2 className="text-[28px] md:text-[48px] font-bold text-white mb-6 text-center">
+          <h2 className="text-[24px] md:text-[36px] font-bold text-white mb-4 text-center">
             We Build Systems So Businesses Don't Break
           </h2>
-          <p className="text-white text-[21px] leading-relaxed text-center mt-2 mb-6">
+          <p className="text-white text-[18px] leading-relaxed text-center mb-5">
             HyppoAI designs and deploys AI-powered automation systems handling social posting,
             inbound calls, lead follow-up, reputation, funnels, and CRM — so businesses stop
             relying on memory, motivation, and manual work.
           </p>
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mb-5">
             <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Business</Link>
           </div>
           <h2 className="text-[28px] md:text-[48px] font-bold text-white text-center mb-6">
