@@ -54,13 +54,13 @@ export default function ResultsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black py-24 px-6 border-b border-[#1a1a1a]">
+      <section className="bg-black py-12 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto text-center">
-          <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-4">Proof</p>
-          <h1 className="text-5xl md:text-8xl font-bold text-white mb-6">
+          <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-3">Proof</p>
+          <h1 className="text-5xl md:text-8xl font-bold text-white mb-3">
             We Build Systems So Businesses Don't Break
           </h1>
-          <p className="text-white text-[21px] max-w-xl mx-auto mb-10">
+          <p className="text-white text-[21px] max-w-xl mx-auto mb-6">
             These are real clients, real results. No inflated numbers — just what happens when
             you replace manual work with systems.
           </p>

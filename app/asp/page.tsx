@@ -45,15 +45,15 @@ export default function ASPPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black min-h-[80vh] flex flex-col justify-center px-6 py-24 border-b border-[#1a1a1a]">
+      <section className="bg-black min-h-[80vh] flex flex-col justify-center px-6 py-12 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto text-center">
           <HeroText>
-            <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-6 mx-auto">
+            <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-3 mx-auto">
               Auto Social Posting <span className="text-[#2cd9fe] whitespace-nowrap">(ASP-Series)</span>
             </h1>
           </HeroText>
           <HeroText>
-            <p className="text-white text-[21px] max-w-2xl mb-10 leading-relaxed mx-auto">
+            <p className="text-white text-[21px] max-w-2xl mb-6 leading-relaxed mx-auto">
               ASP automations run your social media for you by automatically creating and scheduling posts from your content.
             </p>
           </HeroText>

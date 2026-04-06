@@ -29,13 +29,13 @@ export default function CustomBuildsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black py-24 px-6 border-b border-[#1a1a1a]">
+      <section className="bg-black py-12 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto">
-          <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-4">Custom Builds</p>
-          <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight max-w-3xl mb-6">
+          <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-3">Custom Builds</p>
+          <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight max-w-3xl mb-3">
             When Standard Systems Aren't Enough
           </h1>
-          <p className="text-white text-[21px] max-w-2xl leading-relaxed mb-10">
+          <p className="text-white text-[21px] max-w-2xl leading-relaxed mb-6">
             Some businesses have processes that don't fit a pre-built mold. We build custom
             automation systems from the ground up — designed specifically around how your
             business actually works.
