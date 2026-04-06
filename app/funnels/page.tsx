@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
-import { FlowBorderH } from '@/components/FlowBorder';
+import { FlowBorderH, FlowBorderV } from '@/components/FlowBorder';
 
 export const metadata: Metadata = {
   title: 'Advertising & Funnels — HyppoAI',
@@ -58,6 +58,10 @@ export default function FunnelsPage() {
       {/* Options */}
       <section className="bg-[#c9c9c9] on-gray py-20 px-6">
         <div className="max-w-[1170px] mx-auto">
+          <FlowBorderH />
+          <div className="grid grid-cols-[6px_1fr_6px]">
+            <FlowBorderV />
+            <div>
           {funnelOptions.map((row, i) => {
             const textRight = i % 2 !== 0;
             return (
@@ -78,6 +82,10 @@ export default function FunnelsPage() {
               </React.Fragment>
             );
           })}
+            </div>
+            <FlowBorderV />
+          </div>
+          <FlowBorderH />
         </div>
       </section>
     </>
