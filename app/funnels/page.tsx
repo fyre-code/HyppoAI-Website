@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { FadeUp, FadeLeft, FadeRight, StaggerList, StaggerItem, HeroText } from '@/components/AnimatedSection';
+import CircuitBackground from '@/components/CircuitBackground';
 
 export const metadata: Metadata = {
   title: 'Funnels — HyppoAI',
@@ -19,8 +20,9 @@ const features = [
 export default function FunnelsPage() {
   return (
     <>
-      <section className="bg-black min-h-[80vh] flex flex-col justify-center px-6 py-12 border-b border-[#1a1a1a]">
-        <div className="max-w-[1170px] mx-auto relative z-10">
+      <section className="relative overflow-hidden bg-black min-h-[80vh] flex flex-col justify-center px-6 py-12 border-b border-[#1a1a1a]">
+        <CircuitBackground />
+        <div className="relative z-10 max-w-[1170px] mx-auto">
           <HeroText><p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-3">System 06 — Funnels</p></HeroText>
           <HeroText>
             <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-3">

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import CircuitBackground from '@/components/CircuitBackground';
 
 export const metadata: Metadata = {
   title: 'Custom Builds — HyppoAI',
@@ -29,8 +30,9 @@ export default function CustomBuildsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black py-12 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-[1170px] mx-auto">
+      <section className="relative overflow-hidden bg-black py-12 px-6 border-b border-[#1a1a1a]">
+        <CircuitBackground />
+        <div className="relative z-10 max-w-[1170px] mx-auto">
           <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-3">Custom Builds</p>
           <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight max-w-3xl mb-3">
             When Standard Systems Aren't Enough

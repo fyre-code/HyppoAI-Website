@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import CircuitBackground from '@/components/CircuitBackground';
 
 export const metadata: Metadata = {
   title: 'About — HyppoAI',
@@ -12,8 +13,9 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black pt-10 pb-24 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-[1170px] mx-auto">
+      <section className="relative overflow-hidden bg-black pt-10 pb-24 px-6 border-b border-[#1a1a1a]">
+        <CircuitBackground />
+        <div className="relative z-10 max-w-[1170px] mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-3 text-center">
             About Hyppo<span className="text-[#2cd9fe]">AI</span>
           </h1>

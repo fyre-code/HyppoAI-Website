@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import CircuitBackground from '@/components/CircuitBackground';
 
 export const metadata: Metadata = {
   title: 'Contact — HyppoAI',
@@ -9,8 +10,9 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black py-24 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-[1170px] mx-auto">
+      <section className="relative overflow-hidden bg-black py-24 px-6 border-b border-[#1a1a1a]">
+        <CircuitBackground />
+        <div className="relative z-10 max-w-[1170px] mx-auto">
           <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-4">Let's Talk</p>
           <h1 className="text-5xl md:text-8xl font-bold text-white mb-6">Get In Touch</h1>
           <p className="text-white text-[21px] max-w-2xl leading-relaxed">

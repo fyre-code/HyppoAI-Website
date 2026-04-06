@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import ReviewsGrid from '@/components/ReviewsGrid';
+import CircuitBackground from '@/components/CircuitBackground';
 
 const automationSystems = [
   {
@@ -109,11 +110,12 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-black min-h-[90vh] flex flex-col items-center justify-center text-center px-6 py-24 border-b border-[#1a1a1a]">
-        <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-10">
+      <section className="relative overflow-hidden bg-black min-h-[90vh] flex flex-col items-center justify-center text-center px-6 py-24 border-b border-[#1a1a1a]">
+        <CircuitBackground />
+        <h1 className="relative z-10 text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-10">
           Grow Your Business with <span className="text-[#2cd9fe]">AI</span>
         </h1>
-        <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Business</Link>
+        <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="relative z-10 btn-primary">Automate My Business</Link>
       </section>
 
       {/* The Core Problem */}
