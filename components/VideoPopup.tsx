@@ -93,7 +93,7 @@ export default function VideoPopup() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 40 }}
             transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
-            className="fixed bottom-6 right-6 z-50 w-[320px] bg-[#000000] border border-[#2cd9fe] shadow-[0_0_24px_rgba(44,217,254,0.15)]"
+            className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-[calc(100vw-2rem)] max-w-[340px] bg-[#000000] border border-[#2cd9fe] shadow-[0_0_24px_rgba(44,217,254,0.15)]"
           >
             {/* Close button */}
             <button
@@ -150,7 +150,7 @@ export default function VideoPopup() {
             transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
             onClick={() => setPopupState('open')}
             aria-label="Reopen video"
-            className="fixed bottom-6 right-6 z-50 w-12 h-12 bg-[#000000] border border-[#2cd9fe] flex items-center justify-center hover:bg-[#0a0a0a] transition-colors"
+            className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-12 h-12 bg-[#000000] border border-[#2cd9fe] flex items-center justify-center hover:bg-[#0a0a0a] transition-colors"
           >
             <svg className="w-5 h-5 text-[#2cd9fe] ml-0.5" fill="currentColor" viewBox="0 0 24 24">
               <polygon points="5,3 19,12 5,21" />

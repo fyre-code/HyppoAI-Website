@@ -40,7 +40,7 @@ export default function BlogGrid({ posts }: { posts: Post[] }) {
             )}
 
             {/* Card body */}
-            <div className="p-8 flex flex-col flex-1">
+            <div className="p-5 md:p-8 flex flex-col flex-1">
               {/* Animated cyan accent bar */}
               <div className="h-[4px] w-12 bg-[#2cd9fe] mb-5 group-hover:w-full transition-all duration-300" />
 
@@ -82,7 +82,7 @@ export default function BlogGrid({ posts }: { posts: Post[] }) {
             onClick={() => setPage((p) => Math.max(0, p - 1))}
             disabled={page === 0}
             aria-label="Previous page"
-            className={`w-10 h-10 flex items-center justify-center border transition-all duration-200
+            className={`w-11 h-11 flex items-center justify-center border transition-all duration-200
               ${page === 0
                 ? 'border-[#333] text-[#333] cursor-not-allowed'
                 : 'border-[#2cd9fe] bg-[#2cd9fe] text-black hover:bg-transparent hover:text-[#2cd9fe]'
@@ -101,7 +101,7 @@ export default function BlogGrid({ posts }: { posts: Post[] }) {
             onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
             disabled={page === totalPages - 1}
             aria-label="Next page"
-            className={`w-10 h-10 flex items-center justify-center border transition-all duration-200
+            className={`w-11 h-11 flex items-center justify-center border transition-all duration-200
               ${page === totalPages - 1
                 ? 'border-[#333] text-[#333] cursor-not-allowed'
                 : 'border-[#2cd9fe] bg-[#2cd9fe] text-black hover:bg-transparent hover:text-[#2cd9fe]'

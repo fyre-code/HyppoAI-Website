@@ -24,7 +24,7 @@ export default function ReviewCard({ name, date, rating, text }: ReviewCardProps
   }, []);
 
   return (
-    <div className="bg-white p-8 border border-[#aaaaaa] flex flex-col">
+    <div className="bg-white p-5 md:p-8 border border-[#aaaaaa] flex flex-col">
       {/* Stars */}
       <div className="flex items-center gap-1 mb-3">
         {Array.from({ length: rating }).map((_, s) => (

@@ -15,7 +15,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-black min-h-[80vh] flex flex-col justify-center px-6 py-12 border-b border-[#1a1a1a]">
+      <section className="relative overflow-hidden bg-black min-h-[60vh] md:min-h-[80vh] flex flex-col justify-center px-6 py-12 border-b border-[#1a1a1a]">
         <CircuitBackground />
         <div className="relative z-10 max-w-[1170px] mx-auto text-center">
           <HeroText>

@@ -20,10 +20,10 @@ export default function Navbar() {
 
   return (
     <nav className="bg-black border-b border-[#1a1a1a]">
-      <div className="max-w-[1170px] mx-auto px-6 flex items-center justify-between h-36">
+      <div className="max-w-[1170px] mx-auto px-6 flex items-center justify-between h-20 md:h-36">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <Image src="/logo.png" alt="HyppoAI" width={480} height={144} className="h-32 w-auto" priority />
+          <Image src="/logo.png" alt="HyppoAI" width={480} height={144} className="h-12 md:h-32 w-auto" priority />
         </Link>
 
         {/* Desktop Nav */}

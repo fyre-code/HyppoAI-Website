@@ -36,20 +36,20 @@ export default function AboutPage() {
             Unlike a traditional marketing agency, HyppoAI builds infrastructure.
           </h2>
           <div className="flex flex-col gap-3">
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
                 'Systems that answer calls instantly',
                 'Follow up automatically',
                 'Post consistently',
                 'Capture leads properly',
               ].map((item) => (
-                <div key={item} className="flex items-start gap-3 text-white text-[21px]">
+                <div key={item} className="flex items-start gap-3 text-white text-base md:text-[21px]">
                   <span className="text-[#2cd9fe] font-bold shrink-0">+</span>
                   <span>{item}</span>
                 </div>
               ))}
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="flex items-start gap-3 text-white text-[21px]">
                 <span className="text-[#2cd9fe] font-bold shrink-0">+</span>
                 <span>Convert traffic without constant oversight</span>
@@ -72,10 +72,10 @@ export default function AboutPage() {
           </h2>
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex flex-col gap-4 flex-1">
-              <p className="text-[#000000] text-[21px] leading-relaxed">
+              <p className="text-[#000000] text-base md:text-[21px] leading-relaxed">
                 Hyppo Advertising is proud to be the first business to launch from The Be Good House, a live-in incubator for overlooked entrepreneurs.
               </p>
-              <p className="text-[#000000] text-[21px] leading-relaxed">
+              <p className="text-[#000000] text-base md:text-[21px] leading-relaxed">
                 HyppoAds was founded by Inaugural Be Good House Scholar, Joseph Sestito III.
               </p>
             </div>
@@ -115,8 +115,8 @@ export default function AboutPage() {
             ].map((founder, i) => (
               <>
               {i > 0 && <FlowBorderV key={`f-border-${i}`} className="hidden md:block" />}
-              <div key={founder.name} className="p-10 md:p-16 flex flex-col">
-                <div className="flex items-center gap-6 mb-6">
+              <div key={founder.name} className="p-6 md:p-16 flex flex-col">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 mb-6">
                   <div className="w-[200px] h-[200px] rounded-full overflow-hidden border-2 border-[#2cd9fe] shrink-0">
                     <Image src={founder.image} alt={founder.name} width={200} height={200} className="object-cover w-full h-full" />
                   </div>

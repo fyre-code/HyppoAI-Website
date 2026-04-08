@@ -112,7 +112,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-black min-h-[90vh] flex flex-col items-center justify-center text-center px-6 py-24 border-b border-[#1a1a1a]">
+      <section className="relative overflow-hidden bg-black min-h-[60vh] md:min-h-[90vh] flex flex-col items-center justify-center text-center px-6 py-12 md:py-24 border-b border-[#1a1a1a]">
         <CircuitBackground />
         <h1 className="relative z-10 text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-10">
           Grow Your Business with <span className="text-[#2cd9fe]">AI</span>
@@ -121,17 +121,17 @@ export default function HomePage() {
       </section>
 
       {/* The Core Problem */}
-      <section className="bg-[#0a0a0a] py-24 px-6 border-b border-[#1a1a1a]">
+      <section className="bg-[#0a0a0a] py-12 md:py-24 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto">
           <h2 className="text-5xl md:text-8xl font-bold text-[#2cd9fe] mb-6 text-center">
             The Core Problem
           </h2>
-          <p className="text-white text-[28px] md:text-[48px] font-semibold text-center mb-4 leading-tight">
+          <p className="text-white text-xl md:text-[48px] font-semibold text-center mb-4 leading-tight">
             Businesses Don't Fail from Lack of Effort — They Fail from Broken Systems
           </p>
           <ul className="flex flex-col gap-4 max-w-2xl mx-auto">
             {coreProblemItems.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-white text-[21px]">
+              <li key={item} className="flex items-start gap-3 text-white text-base md:text-[21px]">
                 <svg className="w-5 h-5 text-[#2cd9fe] mt-0.5 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -143,7 +143,7 @@ export default function HomePage() {
       </section>
 
       {/* What Our Clients Say */}
-      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray py-24 px-6">
+      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray py-12 md:py-24 px-6">
         <GrayAccentBorder />
         <div className="relative z-10 max-w-[1170px] mx-auto">
           <h2 className="text-5xl md:text-8xl font-bold text-[#000000] mb-6 text-center">
@@ -294,10 +294,10 @@ export default function HomePage() {
       </section>
 
       {/* The HyppoAI Solution */}
-      <section className="bg-[#000000] py-24 px-6 border-b border-[#1a1a1a]">
+      <section className="bg-[#000000] py-12 md:py-24 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto text-center">
           <h2 className="text-5xl md:text-8xl font-bold text-white mb-8">The Hyppo<span className="text-[#2cd9fe]">AI</span> Solution</h2>
-          <p className="text-white text-[21px] mx-auto mb-12">
+          <p className="text-white text-base md:text-[21px] mx-auto mb-12">
             HyppoAI installs AI-powered automation systems that work 24/7 — posting content, answering calls, following up with leads, and managing reputation without relying on memory, motivation, or manpower.
           </p>
           <a href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Business</a>
@@ -319,11 +319,11 @@ export default function HomePage() {
               >
                 {/* Image or color block */}
                 {system.image ? (
-                  <div className="md:w-1/2 relative min-h-[560px] bg-[#c9c9c9] order-last md:order-none">
+                  <div className="md:w-1/2 relative min-h-[280px] md:min-h-[560px] bg-[#c9c9c9] order-last md:order-none">
                     <Image src={system.image} alt={system.title} fill className="object-contain" />
                   </div>
                 ) : (
-                  <div className="md:w-1/2 bg-[#b8b8b8] flex items-center justify-center p-16 min-h-[560px] order-last md:order-none">
+                  <div className="md:w-1/2 bg-[#b8b8b8] flex items-center justify-center p-16 min-h-[280px] md:min-h-[560px] order-last md:order-none">
                     <div className="text-center">
                       <div className="w-16 h-16 border border-[#2cd9fe] flex items-center justify-center mx-auto mb-4">
                         <svg className="w-8 h-8 text-[#2cd9fe]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
@@ -335,7 +335,7 @@ export default function HomePage() {
                   </div>
                 )}
                 {/* Content */}
-                <div className="md:w-1/2 p-10 md:p-16 flex flex-col justify-center items-center text-center order-first md:order-none">
+                <div className="md:w-1/2 p-6 md:p-16 flex flex-col justify-center items-center text-center order-first md:order-none">
                   {system.subtitle && (() => {
                     const phoneIcon = (mirror?: boolean) => (
                       <svg className={`w-[34px] h-[34px] md:w-[54px] md:h-[54px] text-[#2cd9fe] shrink-0${mirror ? ' scale-x-[-1]' : ''}`} fill="currentColor" viewBox="0 0 24 24">
@@ -385,7 +385,7 @@ export default function HomePage() {
                     const prefix = words.slice(0, -1).join(' ');
                     const lastWord = words[words.length - 1];
                     return (
-                      <p className="text-[#000000] text-[28px] md:text-[48px] font-bold flex flex-wrap items-center justify-center gap-x-2 mb-2">
+                      <p className="text-[#000000] text-xl md:text-[48px] font-bold flex flex-wrap items-center justify-center gap-x-2 mb-2">
                         {!system.subtitleIconRight && leftIcon}
                         {system.subtitleIconRight && prefix && <>{prefix}&nbsp;</>}
                         <span className="inline-flex items-center gap-2 whitespace-nowrap">
@@ -396,13 +396,13 @@ export default function HomePage() {
                     );
                   })()}
                   {system.title && (
-                    <h3 className="text-[28px] md:text-[48px] font-bold text-[#000000] mb-4">
+                    <h3 className="text-xl md:text-[48px] font-bold text-[#000000] mb-4">
                       {system.title.startsWith('#')
                         ? <><span className="text-[#2cd9fe]">#</span>{system.title.slice(1)}</>
                         : system.title}
                     </h3>
                   )}
-                  <p className="text-[#000000] text-[21px] leading-relaxed mb-8">{system.description}</p>
+                  <p className="text-[#000000] text-base md:text-[21px] leading-relaxed mb-8">{system.description}</p>
                   <Link href={system.href} className="btn-primary">{system.cta ?? 'Learn More'}</Link>
                 </div>
               </div>
@@ -413,7 +413,7 @@ export default function HomePage() {
       </section>
 
       {/* Social Proof */}
-      <section className="bg-black py-24 px-6 border-b border-[#1a1a1a]">
+      <section className="bg-black py-12 md:py-24 px-6 border-b border-[#1a1a1a]">
         <div className="max-w-[1170px] mx-auto text-center">
           <h2 className="text-5xl md:text-8xl font-bold text-white mb-6">
             Why Choose Hyppo<span className="text-[#2cd9fe]">AI</span>?
@@ -429,7 +429,7 @@ export default function HomePage() {
                 <svg className="w-6 h-6 text-[#2cd9fe] shrink-0 mt-1" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                 </svg>
-                <span className="text-white text-[21px]">{item}</span>
+                <span className="text-white text-base md:text-[21px]">{item}</span>
               </li>
             ))}
           </ul>

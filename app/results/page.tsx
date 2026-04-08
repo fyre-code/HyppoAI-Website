@@ -171,7 +171,7 @@ export default function ResultsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-black min-h-[80vh] flex flex-col justify-center px-6 py-12 border-b border-[#1a1a1a]">
+      <section className="relative overflow-hidden bg-black min-h-[60vh] md:min-h-[80vh] flex flex-col justify-center px-6 py-12 border-b border-[#1a1a1a]">
         <CircuitBackground />
         <div className="relative z-10 max-w-[1170px] mx-auto text-center">
           <HeroText>
@@ -247,10 +247,10 @@ export default function ResultsPage() {
               {videoTestimonials.map((t, i) => (
                 <div key={t.name}>
                   {i > 0 && <FlowBorderH />}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center py-12 px-10">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center py-8 px-4 md:py-12 md:px-10">
                     {/* Left: name + service */}
                     <div className="flex flex-col gap-3 pr-0 md:pr-10">
-                      <h3 className="text-white text-[28px] md:text-[48px] font-bold leading-tight">{t.name}</h3>
+                      <h3 className="text-white text-xl md:text-[48px] font-bold leading-tight">{t.name}</h3>
                       {t.company && (
                         <p className="text-[#2cd9fe] text-[21px] font-semibold">{t.company}</p>
                       )}
@@ -261,7 +261,7 @@ export default function ResultsPage() {
                       {Array.isArray(t.detail) ? (
                         <ul className="flex flex-col gap-2">
                           {t.detail.map((item) => (
-                            <li key={item} className="flex items-start gap-3 text-white text-[21px] leading-relaxed">
+                            <li key={item} className="flex items-start gap-3 text-white text-base md:text-[21px] leading-relaxed">
                               <svg className="w-5 h-5 mt-1 shrink-0 text-[#2cd9fe]" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                               </svg>
@@ -270,7 +270,7 @@ export default function ResultsPage() {
                           ))}
                         </ul>
                       ) : (
-                        <p className="text-white text-[21px] leading-relaxed">{t.detail}</p>
+                        <p className="text-white text-base md:text-[21px] leading-relaxed">{t.detail}</p>
                       )}
                     </div>
 

@@ -38,11 +38,11 @@ export default function ASPPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-black min-h-[80vh] flex flex-col justify-center px-6 py-12 border-b border-[#1a1a1a]">
+      <section className="relative overflow-hidden bg-black min-h-[60vh] md:min-h-[80vh] flex flex-col justify-center px-6 py-12 border-b border-[#1a1a1a]">
         <CircuitBackground />
         <div className="relative z-10 max-w-[1170px] mx-auto text-center">
           <HeroText>
-            <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight whitespace-nowrap mb-1 mx-auto">
+            <h1 className="text-5xl md:text-8xl font-bold text-white leading-tight mb-1 mx-auto">
               Auto Social Posting
             </h1>
           </HeroText>
@@ -61,10 +61,10 @@ export default function ASPPage() {
       </section>
 
       {/* Consistent Content */}
-      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray py-20 px-6 border-b border-[#1a1a1a]">
+      <section className="relative overflow-hidden bg-[#c9c9c9] on-gray py-10 md:py-20 px-6 border-b border-[#1a1a1a]">
         <GrayAccentBorder />
         <div className="relative z-10 max-w-[1170px] mx-auto">
-          <h2 className="text-5xl md:text-8xl font-bold text-[#000000] text-center">
+          <h2 className="text-3xl md:text-8xl font-bold text-[#000000] text-center">
             Consistent content — without logging in, remembering, or posting manually.
           </h2>
         </div>

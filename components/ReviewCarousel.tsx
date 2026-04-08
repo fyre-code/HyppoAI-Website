@@ -50,7 +50,7 @@ export default function ReviewCarousel({ reviews, aiSummary }: ReviewCarouselPro
           onClick={() => setOffset(o => Math.max(0, o - 1))}
           disabled={!canGoLeft}
           aria-label="Previous reviews"
-          className={`w-10 h-10 flex items-center justify-center border transition-colors ${
+          className={`w-11 h-11 flex items-center justify-center border transition-colors ${
             canGoLeft
               ? 'border-[#2cd9fe] bg-[#2cd9fe] text-black hover:bg-transparent hover:text-[#2cd9fe]'
               : 'border-[#aaaaaa] text-[#aaaaaa] cursor-not-allowed'
@@ -64,7 +64,7 @@ export default function ReviewCarousel({ reviews, aiSummary }: ReviewCarouselPro
           onClick={() => setOffset(o => Math.min(total - visible, o + 1))}
           disabled={!canGoRight}
           aria-label="Next reviews"
-          className={`w-10 h-10 flex items-center justify-center border transition-colors ${
+          className={`w-11 h-11 flex items-center justify-center border transition-colors ${
             canGoRight
               ? 'border-[#2cd9fe] bg-[#2cd9fe] text-black hover:bg-transparent hover:text-[#2cd9fe]'
               : 'border-[#aaaaaa] text-[#aaaaaa] cursor-not-allowed'
