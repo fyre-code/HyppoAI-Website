@@ -143,9 +143,6 @@ export default function PrivacyPage() {
             </div>
           </div>
 
-          <div className="border-t border-[#1a1a1a] pt-8 text-[#555] text-sm">
-            2025 © All Rights Reserved Hyppo Advertising, Inc
-          </div>
         </div>
       </div>
     </section>
