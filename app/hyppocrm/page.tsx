@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FadeUp, FadeLeft, FadeRight, StaggerList, StaggerItem, HeroText } from '@/components/AnimatedSection';
+import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
 import { FlowBorderH } from '@/components/FlowBorder';
@@ -16,14 +16,6 @@ export const metadata: Metadata = buildMetadata({
   path: '/hyppocrm',
 });
 
-const features = [
-  { title: 'Automated Lead Tracking', description: 'Every lead is captured and logged automatically — from calls, forms, ads, and more.' },
-  { title: 'Follow-Up Sequences', description: 'Automated SMS, email, and voicemail sequences that nurture leads until they\'re ready to buy.' },
-  { title: 'Pipeline Visibility', description: 'See exactly where every prospect is in your sales process — without manually updating anything.' },
-  { title: 'Appointment Automation', description: 'Reminders, confirmations, and follow-ups sent automatically before and after every appointment.' },
-  { title: 'Deal Tagging & Routing', description: 'Leads are tagged and routed based on behavior — so the right person gets the right follow-up.' },
-  { title: 'Reporting Dashboard', description: 'Know your close rate, lead sources, and pipeline health — without building spreadsheets.' },
-];
 
 export default function HyppoCRMPage() {
   return (
@@ -83,39 +75,6 @@ export default function HyppoCRMPage() {
         </div>
       </section>
 
-      <section className="bg-black py-20 px-6 border-b border-[#1a1a1a]">
-        <div className="max-w-[1170px] mx-auto">
-          <FadeUp>
-            <p className="text-[#2cd9fe] text-xs uppercase tracking-widest mb-4">What's Included</p>
-            <h2 className="text-[28px] md:text-[48px] font-bold text-white mb-16">Inside HyppoCRM</h2>
-          </FadeUp>
-          <StaggerList className="grid md:grid-cols-2 lg:grid-cols-3 gap-0 border border-[#1a1a1a]">
-            {features.map((f, i) => (
-              <StaggerItem key={f.title}>
-                <div className={`p-8 border-b border-r border-[#1a1a1a] h-full ${i % 3 === 2 ? 'md:border-r-0' : ''}`}>
-                  <div className="w-8 h-8 border border-[#2cd9fe] flex items-center justify-center mb-4">
-                    <div className="w-2 h-2 bg-[#2cd9fe]" />
-                  </div>
-                  <h3 className="text-white font-bold text-[21px] mb-2">{f.title}</h3>
-                  <p className="text-white text-sm leading-relaxed">{f.description}</p>
-                </div>
-              </StaggerItem>
-            ))}
-          </StaggerList>
-        </div>
-      </section>
-
-      <section className="bg-[#0a0a0a] py-20 px-6">
-        <div className="max-w-[1170px] mx-auto text-center">
-          <FadeUp>
-            <h2 className="text-[28px] md:text-[48px] font-bold text-white mb-4">Close More Deals Without More Work</h2>
-            <p className="text-white mb-8 max-w-lg mx-auto">
-              Book a session and we'll show you how HyppoCRM would fit into your current sales process.
-            </p>
-            <Link href="/contact" className="btn-primary">Get This System</Link>
-          </FadeUp>
-        </div>
-      </section>
     </>
   );
 }
