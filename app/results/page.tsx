@@ -181,7 +181,7 @@ export default function ResultsPage() {
           </HeroText>
           <HeroText>
             <p className="text-white text-[21px] max-w-2xl mb-6 leading-relaxed mx-auto">
-              We Build <span className="text-[#2cd9fe]">Systems</span> So Businesses Don&apos;t Break
+              We Build <span className="text-[#2cd9fe]">Systems</span>{' '}So Businesses Don&apos;t Break
             </p>
           </HeroText>
           <HeroText>
