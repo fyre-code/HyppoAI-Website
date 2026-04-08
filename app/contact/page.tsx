@@ -91,9 +91,9 @@ export default function ContactPage() {
               <div className="p-10 flex flex-col gap-6">
                 <p className="text-[#000000] text-[28px] md:text-[48px] font-bold">Select Date &amp; Time</p>
                 <iframe
-                  src="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic"
-                  width="100%"
-                  style={{ height: '700px', border: 'none' }}
+                  src="https://hyppohq.io/book/afb93484-fec9-43a8-b943-847eba0be516?embed=true&theme=dark"
+                  style={{ width: '100%', minHeight: '700px', border: 'none' }}
+                  allowFullScreen
                   title="Book a HyppoAI Strategy Session"
                 />
               </div>
