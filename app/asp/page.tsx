@@ -18,11 +18,6 @@ const aspSystems = [
     image: '/asp-form.webp',
   },
   {
-    title: 'ASP-MG',
-    description: 'POV (Point of View) content captured with Meta Glasses is automatically uploaded, captioned, and posted to social — zero editing or scheduling required.',
-    image: '/asp-mg.webp',
-  },
-  {
     title: 'ASP-Echo',
     description: 'AI avatar videos are generated, captioned, and distributed across social platforms to maintain consistent authority and presence at scale.',
     image: '/asp-echo.webp',
@@ -117,15 +112,6 @@ export default function ASPPage() {
                 <h3 className="text-white text-[28px] md:text-[48px] font-bold">{system.title}</h3>
 
                 {/* Icons on the RIGHT */}
-                {system.title === 'ASP-MG' && (
-                  <svg className="w-12 h-8 shrink-0" viewBox="0 0 60 36" fill="none" stroke="#2cd9fe" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="2" y1="2" x2="8" y2="8" />
-                    <rect x="8" y="8" width="18" height="20" rx="5" />
-                    <line x1="26" y1="18" x2="34" y2="18" />
-                    <rect x="34" y="8" width="18" height="20" rx="5" />
-                    <line x1="52" y1="8" x2="58" y2="2" />
-                  </svg>
-                )}
                 {system.title === 'ASP-Graphic' && (
                   <svg className="w-10 h-10 shrink-0" viewBox="0 0 24 24" fill="#2cd9fe">
                     {/* Image frame */}
