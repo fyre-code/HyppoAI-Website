@@ -33,7 +33,7 @@ export default function AboutPage() {
             relying on memory, motivation, and manual work.
           </p>
           <div className="flex justify-center mb-5">
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Business</Link>
+            <Link href="/contact" className="btn-primary">Automate My Business</Link>
           </div>
           <h2 className="text-[28px] md:text-[48px] font-bold text-white text-center mb-6">
             Unlike a traditional marketing agency, HyppoAI builds infrastructure.
@@ -60,7 +60,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="flex justify-center mt-6">
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Business</Link>
+            <Link href="/contact" className="btn-primary">Automate My Business</Link>
           </div>
         </div>
       </section>
@@ -134,7 +134,7 @@ export default function AboutPage() {
             ))}
           </div>
           <div className="text-center mt-16">
-            <a href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Work with Us</a>
+            <a href="/contact" className="btn-primary">Work with Us</a>
           </div>
         </div>
       </section>

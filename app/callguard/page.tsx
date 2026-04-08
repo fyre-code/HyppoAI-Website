@@ -33,7 +33,7 @@ export default function CallGuardPage() {
             </p>
           </HeroText>
           <HeroText>
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Phone</Link>
+            <Link href="/contact" className="btn-primary">Automate My Phone</Link>
           </HeroText>
         </div>
       </section>
@@ -106,7 +106,7 @@ export default function CallGuardPage() {
             ))}
           </div>
           <div className="flex justify-center mt-12">
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Phone</Link>
+            <Link href="/contact" className="btn-primary">Automate My Phone</Link>
           </div>
         </div>
       </section>
@@ -141,7 +141,7 @@ export default function CallGuardPage() {
             ))}
           </ul>
           <div className="flex justify-center mt-4">
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Phone</Link>
+            <Link href="/contact" className="btn-primary">Automate My Phone</Link>
           </div>
         </div>
       </section>
@@ -155,7 +155,7 @@ export default function CallGuardPage() {
             <h2 className="text-5xl md:text-8xl font-bold text-[#000000] mb-8">
               Bottom Line: If the phone rings, then <span className="text-[#2cd9fe]">CallGuard</span> answers.
             </h2>
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Phone</Link>
+            <Link href="/contact" className="btn-primary">Automate My Phone</Link>
           </FadeUp>
         </div>
       </section>

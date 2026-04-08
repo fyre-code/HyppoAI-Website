@@ -59,7 +59,7 @@ export default function ASPPage() {
             </p>
           </HeroText>
           <HeroText>
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Socials</Link>
+            <Link href="/contact" className="btn-primary">Automate My Socials</Link>
           </HeroText>
         </div>
       </section>
@@ -129,7 +129,7 @@ export default function ASPPage() {
               </div>
                   <p className="text-white text-[21px] leading-relaxed mb-6">{system.description}</p>
                   <div className="flex justify-center">
-                    <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Socials</Link>
+                    <Link href="/contact" className="btn-primary">Automate My Socials</Link>
                   </div>
                 </div>
                 <div className={`relative shrink-0 w-full max-w-[400px] aspect-square bg-[#000000] flex items-center justify-center mx-auto md:mx-0 ${imageRight ? 'order-last' : 'order-last md:order-first'}`}>

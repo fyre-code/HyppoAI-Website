@@ -29,7 +29,7 @@ export default function CustomBuildsPage() {
             </p>
           </HeroText>
           <HeroText>
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Get a Custom Build</Link>
+            <Link href="/contact" className="btn-primary">Get a Custom Build</Link>
           </HeroText>
         </div>
       </section>

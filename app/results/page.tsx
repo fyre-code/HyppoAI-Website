@@ -188,7 +188,7 @@ export default function ResultsPage() {
             </p>
           </HeroText>
           <HeroText>
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Business</Link>
+            <Link href="/contact" className="btn-primary">Automate My Business</Link>
           </HeroText>
         </div>
       </section>
@@ -310,7 +310,7 @@ export default function ResultsPage() {
             <FlowBorderV />
           </div>
           <div className="py-16 text-center">
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">
+            <Link href="/contact" className="btn-primary">
               Automate My Business
             </Link>
           </div>

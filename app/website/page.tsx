@@ -52,7 +52,7 @@ export default function WebsitePage() {
             </p>
           </HeroText>
           <HeroText>
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Website</Link>
+            <Link href="/contact" className="btn-primary">Automate My Website</Link>
           </HeroText>
         </div>
       </section>
@@ -77,7 +77,7 @@ export default function WebsitePage() {
                     <h3 className="text-[28px] md:text-[48px] font-bold text-[#000000]">{row.subheading}</h3>
                     <p className="text-[#000000] text-[21px] leading-relaxed">{row.text}</p>
                     <div>
-                      <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Website</Link>
+                      <Link href="/contact" className="btn-primary">Automate My Website</Link>
                     </div>
                   </div>
                   <div className="p-10 flex items-center justify-center">

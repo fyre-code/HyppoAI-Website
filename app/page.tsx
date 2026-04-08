@@ -126,7 +126,7 @@ export default function HomePage() {
         <h1 className="relative z-10 text-5xl md:text-8xl font-bold text-white leading-tight max-w-4xl mb-10">
           Grow Your Business with <span className="text-[#2cd9fe]">AI</span>
         </h1>
-        <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="relative z-10 btn-primary">Automate My Business</Link>
+        <Link href="/contact" className="relative z-10 btn-primary">Automate My Business</Link>
       </section>
 
       {/* The Core Problem */}
@@ -309,7 +309,7 @@ export default function HomePage() {
           <p className="text-white text-base md:text-[21px] mx-auto mb-12">
             HyppoAI installs AI-powered automation systems that work 24/7 — posting content, answering calls, following up with leads, and managing reputation without relying on memory, motivation, or manpower.
           </p>
-          <a href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Business</a>
+          <a href="/contact" className="btn-primary">Automate My Business</a>
         </div>
       </section>
 
@@ -443,7 +443,7 @@ export default function HomePage() {
             ))}
           </ul>
 
-          <a href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary inline-block">Automate My Business</a>
+          <a href="/contact" className="btn-primary inline-block">Automate My Business</a>
         </div>
       </section>
 
@@ -503,7 +503,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-16">
-            <a href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Work with Us</a>
+            <a href="/contact" className="btn-primary">Work with Us</a>
           </div>
         </div>
       </section>

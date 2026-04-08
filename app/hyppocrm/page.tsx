@@ -42,7 +42,7 @@ export default function HyppoCRMPage() {
             </p>
           </HeroText>
           <HeroText>
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Leads</Link>
+            <Link href="/contact" className="btn-primary">Automate My Leads</Link>
           </HeroText>
         </div>
       </section>
@@ -112,7 +112,7 @@ export default function HyppoCRMPage() {
             <p className="text-white mb-8 max-w-lg mx-auto">
               Book a session and we'll show you how HyppoCRM would fit into your current sales process.
             </p>
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Get This System</Link>
+            <Link href="/contact" className="btn-primary">Get This System</Link>
           </FadeUp>
         </div>
       </section>

@@ -35,7 +35,7 @@ export default function ReputationPage() {
             </p>
           </HeroText>
           <HeroText>
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Reviews</Link>
+            <Link href="/contact" className="btn-primary">Automate My Reviews</Link>
           </HeroText>
         </div>
       </section>
@@ -83,7 +83,7 @@ export default function ReputationPage() {
             ))}
           </div>
           <div className="flex justify-center mt-12">
-            <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Reviews</Link>
+            <Link href="/contact" className="btn-primary">Automate My Reviews</Link>
           </div>
         </div>
       </section>
@@ -94,7 +94,7 @@ export default function ReputationPage() {
           <h2 className="text-5xl md:text-8xl font-bold text-white mb-8">
             Bottom Line:<br />Happy customers become public <span className="text-[#2cd9fe]">proof.</span>
           </h2>
-          <Link href="https://api.hyppocrm.com/widget/booking/fKaW48nTCxlxxHygIUic" className="btn-primary">Automate My Reviews</Link>
+          <Link href="/contact" className="btn-primary">Automate My Reviews</Link>
         </div>
       </section>
     </>
