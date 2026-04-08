@@ -6,6 +6,8 @@ export const posts: Post[] = [
     title: "Why Sticky Notes and Notebooks Don't Scale for Modern Service Businesses",
     date: 'April 6, 2026',
     author: 'Joseph Sestito III',
+    image: '/blog/why-sticky-notes.png',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up', 'Systems, Scaling & Operations'],
     excerpt: "Sticky notes and notebooks feel productive — until a lead falls through a crack or a task gets forgotten. Here's why they don't scale.",
     content: `<h2>Why Sticky Notes and Notebooks Don't Scale for Modern Service Businesses</h2>
 <p>Many service businesses start with the same simple toolkit: a whiteboard, a pack of sticky notes, and a stack of notebooks. For a while, it works. You remember most things, your team is small, and important details live in your head.</p>
@@ -69,6 +71,8 @@ export const posts: Post[] = [
     title: 'Why Editing Speed Matters More Than Perfection in Content',
     date: 'April 3, 2026',
     author: 'Joseph Sestito III',
+    image: '/blog/editing-speed.png',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'ChatGPT & AI Productivity Tips', 'Systems, Scaling & Operations', 'Owner Mindset & Decision Support'],
     excerpt: "Waiting for the perfect post means posting less. Here's why speed beats perfection for small business content.",
     content: `<h2>Why Editing Speed Matters More Than Perfection</h2>
 <p>Modern marketing moves quickly. Content is produced, distributed, and consumed at a pace that would have been unthinkable a decade ago. For many business owners, this creates a recurring tension: spend more time polishing every piece of content, or ship faster and keep momentum.</p>
@@ -123,6 +127,8 @@ export const posts: Post[] = [
     title: 'Why Many Businesses Are Harder to Reach Than They Think',
     date: 'April 2, 2026',
     author: 'Joseph Sestito III',
+    image: '/blog/businesses-harder-to-reach.png',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up'],
     excerpt: "Most business owners think they're easy to contact. Their customers often disagree. Here's what gets in the way.",
     content: `<h2>The Perception Gap: Why Owners Think They Are Easy to Reach</h2>
 <p>From the inside, a business often looks much more accessible than it feels from the outside. Owners see the tools and effort: phones ringing, inboxes open, live chat installed, and staff working hard. Customers, however, only experience what happens in the moments they need help.</p>
@@ -166,6 +172,8 @@ export const posts: Post[] = [
     title: 'How Modern Businesses Handle Repetitive Tasks Differently',
     date: 'April 1, 2026',
     author: 'Joseph Sestito III',
+    image: '/blog/repetitive-tasks.png',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: "The businesses growing fastest aren't working harder — they've removed themselves from the repetitive work entirely.",
     content: `<h2>How Modern Businesses Handle Repetitive Tasks Differently</h2>
 <p>For many service businesses, repetitive work is not just a minor annoyance. It is where time leaks, errors creep in, and staff get pulled away from higher-value work. Modern businesses are not eliminating repetitive tasks altogether, but they are handling them very differently by combining AI, automation, and clearer systems.</p>
@@ -202,6 +210,8 @@ export const posts: Post[] = [
     title: 'How AI, Automations, Follow-Ups, and APIs Connect',
     date: 'March 31, 2026',
     author: 'Joseph Sestito III',
+    image: '/blog/ai-automations-apis.png',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up', 'Systems, Scaling & Operations'],
     excerpt: "AI doesn't work alone. It connects with automations, follow-up sequences, and APIs to build systems that run without you.",
     content: `<h2>How AI, Automations, Follow-Ups, and APIs Connect in One System</h2>
 <p>For many service businesses, the hardest part of marketing is not getting attention. It is connecting all the pieces: your ads, your inbox, your CRM, your calendar, your follow-up messages, and your internal workflows. When these systems do not communicate with each other, opportunities can be missed and teams often get buried in manual tasks.</p>
@@ -244,6 +254,8 @@ export const posts: Post[] = [
     title: 'How HyppoCRM Helps Businesses Stay Organized Without Spreadsheets',
     date: 'March 27, 2026',
     author: 'Joseph Sestito III',
+    image: '/blog/hyppocrm-spreadsheets.png',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up', 'Tools & Systems We Use', 'Systems, Scaling & Operations'],
     excerpt: 'Spreadsheets break down when your business grows. HyppoCRM keeps everything in one place — automatically.',
     content: `<h2>How HyppoCRM Helps Businesses Stay Organized Without Spreadsheets</h2>
 <p>Many service businesses still run on spreadsheets. Client lists, job details, follow-ups, billing notes, and even marketing activities often live in separate files that only a few people fully understand. This can work for a while, but it usually becomes fragile, slow, and hard to scale.</p>
@@ -281,6 +293,8 @@ export const posts: Post[] = [
     title: 'How to Talk to ChatGPT Like an Employee',
     date: 'March 26, 2026',
     author: 'Joseph Sestito III',
+    image: '/blog/chatgpt-employee.png',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'ChatGPT & AI Productivity Tips', 'Systems, Scaling & Operations', 'Owner Mindset & Decision Support'],
     excerpt: 'Most people use ChatGPT like a search engine. The results are better when you treat it like a new hire who needs direction.',
     content: `<h2>How to Talk to ChatGPT Like a Capable Digital Employee</h2>
 <p>Many business owners experiment with AI tools like ChatGPT, ask a few questions, see mixed results, and then decide the technology is overhyped. In many cases, the problem is not the AI itself but how it is being used.</p>
@@ -317,6 +331,8 @@ export const posts: Post[] = [
     title: 'Why Forms Are the Front Door to Systems',
     date: 'March 25, 2026',
     author: 'Joseph Sestito III',
+    image: '/blog/forms-front-door.png',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Tools & Systems We Use', 'Systems, Scaling & Operations'],
     excerpt: "A form isn't just a way to collect info — it's the trigger that starts every automation in your business.",
     content: `<h2>Forms as the Bridge Between People and Systems</h2>
 <p>Every system in your business depends on inputs. CRMs, project management tools, billing systems, and automation platforms can only work with the data they receive. Forms are the bridge that turns a conversation, inquiry, or request into fields your tools can understand.</p>
@@ -350,6 +366,8 @@ export const posts: Post[] = [
     title: 'How AI Video Fits Into Modern Marketing Systems',
     date: 'March 24, 2026',
     author: 'Joseph Sestito III',
+    image: '/blog/ai-video-marketing-5218.png',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: 'AI-generated video makes consistent content possible without a camera, a crew, or a recording schedule.',
     content: `<h2>What Do We Mean by AI Video?</h2>
 <p>AI video encompasses several capabilities often used together:</p>
@@ -388,6 +406,8 @@ export const posts: Post[] = [
     title: 'How Automated File Handling Saves Time Quietly',
     date: 'March 23, 2026',
     author: 'Joseph Sestito III',
+    image: '/blog/file-handling.png',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: "Nobody talks about file handling — but the time lost to it adds up fast. Automation fixes it in the background.",
     content: `<h2>How Automated File Handling Quietly Saves Time</h2>
 <p>Most service businesses lose time in the same quiet way: searching for files, renaming documents, saving attachments, and copying the same information into multiple places. None of these tasks seem urgent, but together they add up to hours every week.</p>
@@ -433,6 +453,7 @@ export const posts: Post[] = [
     title: 'How AI Video Fits Into Modern Marketing Systems',
     date: 'March 19, 2026',
     author: 'Joseph Sestito III',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Tools & Systems We Use', 'Systems, Scaling & Operations'],
     excerpt: 'AI video tools are reshaping how service businesses create, distribute, and measure video content across every stage of the funnel.',
     content: `<h2>AI Video as a System Component, Not a One-Off Tactic</h2>
 <p>Traditional video projects often sit off to the side: a single campaign, a one-time brand film, or a quarterly production effort. AI video technologies shift this model by making video faster to produce, easier to adapt, and more connected to your existing digital channels.</p>
@@ -464,6 +485,7 @@ export const posts: Post[] = [
     title: 'Automatic File Naming and Sorting Explained',
     date: 'March 18, 2026',
     author: 'Joseph Sestito III',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: 'Inconsistent file names and cluttered folders slow everything down. Here\'s how automatic sorting removes the problem.',
     content: `<h2>From Manual Filing to Automated Systems</h2>
 <p>Traditionally, file management has depended on people following agreed naming conventions and folder structures. Automation changes this in three key ways:</p>
@@ -500,6 +522,7 @@ export const posts: Post[] = [
     title: 'Why ChatGPT Needs to Know the Target Audience',
     date: 'March 17, 2026',
     author: 'Joseph Sestito III',
+    tags: ['AI for Service Businesses', 'Business Automation Explained'],
     excerpt: 'Generic prompts produce generic output. Tell ChatGPT exactly who it\'s writing for and everything gets sharper.',
     content: `<h2>Why ChatGPT Needs to Know Who the Output Is For</h2>
 <p>When business owners first experiment with tools like ChatGPT, one pattern shows up quickly: the same prompt can produce very different quality results depending on how clearly you describe who the output is for. Audience context is not a minor detail; it is one of the main inputs that determines whether AI-generated content is merely passable, or genuinely useful in a real business setting.</p>
@@ -538,6 +561,7 @@ export const posts: Post[] = [
     title: 'AI-Generated Video Without Recording',
     date: 'March 16, 2026',
     author: 'Joseph Sestito III',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: "You don't need to be on camera to have a video presence. AI avatar tools handle the recording for you.",
     content: `<h2>What Happens When Video Content No Longer Requires Recording</h2>
 <p>For most of the internet era, creating video has meant planning a shoot, setting up equipment, recording people or products, and then editing the footage. Artificial intelligence is changing that assumption. Increasingly, businesses can generate video without recording anything at all.</p>
@@ -570,6 +594,7 @@ export const posts: Post[] = [
     title: "What Zapier Does Best and Where It Starts to Break",
     date: 'March 13, 2026',
     author: 'Joseph Sestito III',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up', 'AI Receptionists & Voice Automation', 'Tools & Systems We Use', 'Systems, Scaling & Operations'],
     excerpt: "Zapier is powerful for simple connections between tools — but there's a ceiling. Here's where it works and where it doesn't.",
     content: `<h2>What Zapier Does Best (And Where It Starts to Break)</h2>
 <p>Zapier is often the first automation tool business owners and operations teams encounter. It offers a straightforward way to connect apps and move data without writing code. For many service businesses, that value is real: quick connections between popular tools, simple workflow logic, and a low barrier to entry.</p>
@@ -606,6 +631,7 @@ export const posts: Post[] = [
     title: 'Why Scheduling Is a System Problem',
     date: 'March 12, 2026',
     author: 'Joseph Sestito III',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: "Scheduling chaos isn't a calendar problem — it's a systems problem. Here's how to fix the root cause.",
     content: `<h2>Why Scheduling Is a System Problem, Not Just a Calendar Issue</h2>
 <p>For many service businesses, scheduling feels like a constant firefight: last-minute cancellations, double bookings, underutilized staff, and frustrated customers. It is easy to blame people or tools, but most recurring scheduling challenges are actually system problems.</p>
@@ -642,6 +668,7 @@ export const posts: Post[] = [
     title: 'How Automation Helps Owners Step Out of the Weeds',
     date: 'March 11, 2026',
     author: 'Joseph Sestito III',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up', 'Systems, Scaling & Operations', 'Owner Mindset & Decision Support'],
     excerpt: 'Most business owners are stuck doing work their business should be doing. Automation creates the exit.',
     content: `<h2>How Automation Helps Owners Step Out of the Weeds</h2>
 <p>Many business owners start out doing almost everything themselves. Over time, the workload grows, the team expands, and the technology stack becomes more complicated. Yet the owner often remains deeply involved in day-to-day tasks, constantly putting out fires instead of steering the company. This is what many people describe as being stuck in the weeds.</p>
@@ -684,6 +711,7 @@ export const posts: Post[] = [
     title: 'The Real Reason Leads Go Cold So Fast',
     date: 'March 9, 2026',
     author: 'Joseph Sestito III',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up'],
     excerpt: 'Speed is the most important factor in lead conversion — and most businesses are too slow to respond.',
     content: `<h2>The Real Reason Leads Go Cold So Fast</h2>
 <p>Many service business owners share the same frustration: leads look promising at first, then disappear without a word. In reality, there are consistent, structural reasons why leads go cold so quickly. Most of them have less to do with your offer and more to do with timing, expectations, and the systems that sit between your marketing and your operations.</p>
@@ -727,6 +755,7 @@ export const posts: Post[] = [
     title: 'AI Image Generators: Small Business Use Cases',
     date: 'March 7, 2026',
     author: 'Joseph Sestito III',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: "AI image generators aren't just for artists. Here's how small businesses are using them to replace design costs.",
     content: `<h2>AI Image Generators for Small Businesses: Practical Use Cases</h2>
 <p>AI image generators are tools that create new images from text descriptions, reference images, or a combination of both. For service businesses and local retailers, the main value is not novelty. It is the ability to quickly produce visual assets for everyday communication: promotions, seasonal posts, simple illustrations, and on-brand variations of a concept that would otherwise require design time or a photo shoot.</p>
@@ -775,6 +804,7 @@ export const posts: Post[] = [
     title: 'Why ChatGPT Context Matters More Than Better Questions',
     date: 'March 7, 2026',
     author: 'Joseph Sestito III',
+    tags: ['AI for Service Businesses', 'Business Automation Explained', 'ChatGPT & AI Productivity Tips'],
     excerpt: 'The prompt isn\'t the problem. The missing context is. Here\'s how to give ChatGPT what it actually needs.',
     content: `<h2>Why Giving ChatGPT Context Matters More Than Asking Better Questions</h2>
 <p>As AI tools like ChatGPT become part of everyday work, many teams focus on crafting clever prompts or finding secret question templates. In practice, the biggest performance gains rarely come from fancy wording. They come from giving the AI the right context.</p>

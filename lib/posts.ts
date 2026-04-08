@@ -4,6 +4,8 @@ export interface Post {
   date: string;
   excerpt: string;
   author: string;
+  image?: string; // /blog/*.png — hosted in public/blog/
+  tags?: string[];
   content: string; // HTML — populated when each post is migrated
 }
 

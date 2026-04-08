@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import CircuitBackground from '@/components/CircuitBackground';
@@ -19,6 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${post.title} — HyppoAI`,
     description: post.excerpt,
+    openGraph: post.image ? { images: [post.image] } : undefined,
   };
 }
 
@@ -37,17 +39,48 @@ export default async function PostPage({ params }: Props) {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
-            Back to Blog
+            Back to Blogs
           </Link>
-          <p className="text-[#555] text-xs uppercase tracking-widest mt-4 mb-3">{post.date} · {post.author}</p>
-          <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+          <p className="text-[#555] text-xs uppercase tracking-widest mt-4 mb-3">
+            {post.date} · {post.author}
+          </p>
+          <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-5">
             {post.title}
           </h1>
+          {/* Tags */}
+          {post.tags && post.tags.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {post.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-[10px] uppercase tracking-widest px-3 py-1 border border-[#2a2a2a] text-[#666]"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
+      {/* Featured image */}
+      {post.image && (
+        <div className="bg-[#0a0a0a] px-6 pt-12">
+          <div className="max-w-[800px] mx-auto relative w-full h-64 md:h-[420px] overflow-hidden">
+            <Image
+              src={post.image}
+              alt={post.title}
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 768px) 100vw, 800px"
+            />
+          </div>
+        </div>
+      )}
+
       {/* Post content */}
-      <section className="bg-[#0a0a0a] py-20 px-6">
+      <section className="bg-[#0a0a0a] py-12 px-6">
         <div className="max-w-[800px] mx-auto">
           {post.content ? (
             <div
@@ -64,7 +97,7 @@ export default async function PostPage({ params }: Props) {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
-              Back to Blog
+              Back to Blogs
             </Link>
           </div>
         </div>
