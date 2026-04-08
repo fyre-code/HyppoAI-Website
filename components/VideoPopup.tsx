@@ -133,7 +133,7 @@ export default function VideoPopup() {
 
             {/* Caption */}
             <p className="p-4 pt-3 text-white text-[13px] leading-relaxed">
-              Watch how one business used AI to capture 6 new opportunities after hours—without hiring staff, missing leads, or lifting a finger.
+              Watch how one business used HyppoAI to capture 6 new opportunities after hours—without hiring staff, missing leads, or lifting a finger.
             </p>
           </motion.div>
         )}
