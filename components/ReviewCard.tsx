@@ -35,7 +35,7 @@ export default function ReviewCard({ name, date, rating, text }: ReviewCardProps
       </div>
 
       {/* Review text */}
-      <p ref={textRef} className={`text-[#000000] text-[12px] leading-relaxed mb-4 ${!expanded ? 'line-clamp-5' : ''}`}>
+      <p ref={textRef} className={`text-[#000000] text-[16px] leading-relaxed mb-4 ${!expanded ? 'line-clamp-5' : ''}`}>
         {text}
       </p>
 
