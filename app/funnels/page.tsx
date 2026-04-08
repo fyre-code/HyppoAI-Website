@@ -6,10 +6,14 @@ import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import { FlowBorderH, FlowBorderV } from '@/components/FlowBorder';
 
-export const metadata: Metadata = {
-  title: 'Advertising & Funnels — HyppoAI',
-  description: 'AI-generated ad creatives, funnel management, and automated follow-up — built to convert traffic into clients.',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata: Metadata = buildMetadata({
+  title: 'AI Advertising & Funnels — HyppoAI | Palm Bay, FL',
+  description: 'HyppoAI builds AI-generated ad creatives & automated funnels for businesses in Palm Bay, FL. Convert traffic to clients. Call (732) 962-3725.',
+  keywords: ['AI advertising', 'sales funnels', 'funnel automation', 'ad creatives AI', 'lead generation funnels', 'digital advertising', 'automated funnels', 'Palm Bay Florida', 'HyppoAI', 'conversion funnels', 'Facebook ads automation', 'AI ad generation'],
+  path: '/funnels',
+});
 
 const funnelOptions = [
   {

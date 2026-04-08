@@ -1,6 +1,15 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import ReviewsGrid from '@/components/ReviewsGrid';
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata: Metadata = buildMetadata({
+  title: 'AI Business Automation Systems — HyppoAI | Palm Bay, FL',
+  description: 'HyppoAI provides AI-powered business automation in Palm Bay, FL. Social media, AI calls, CRM & more. Call (732) 962-3725.',
+  keywords: ['ai business automation', 'business automation systems', 'AI social media posting', 'AI receptionist', 'CRM automation', 'lead follow-up automation', 'Palm Bay Florida', 'small business AI', 'HyppoAI', 'automated social posting', 'business systems AI', 'Hyppo Advertising'],
+  path: '',
+});
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
 import { FlowBorderH, FlowBorderV } from '@/components/FlowBorder';

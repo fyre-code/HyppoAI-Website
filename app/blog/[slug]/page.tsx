@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import CircuitBackground from '@/components/CircuitBackground';
 import { getAllPosts, getPostBySlug } from '@/lib/posts';
+import { buildMetadata, LOGO_OG_URL, LOGO_ALT } from '@/lib/seo';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -17,11 +18,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
-  return {
-    title: `${post.title} — HyppoAI`,
-    description: post.excerpt,
-    openGraph: post.image ? { images: [post.image] } : undefined,
-  };
+  return buildMetadata({
+    title: `${post.title} — HyppoAI | Palm Bay, FL`,
+    description: post.excerpt.slice(0, 155),
+    keywords: post.tags ?? [],
+    path: `/blog/${slug}`,
+    imageUrl: post.image ? `https://www.hyppohq.ai${post.image}` : LOGO_OG_URL,
+    imageAlt: post.image ? post.title : LOGO_ALT,
+  });
 }
 
 export default async function PostPage({ params }: Props) {

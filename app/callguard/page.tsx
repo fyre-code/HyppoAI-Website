@@ -5,10 +5,14 @@ import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
 import { FlowBorderV } from '@/components/FlowBorder';
 
-export const metadata: Metadata = {
-  title: 'Phone AI CallGuard — HyppoAI',
-  description: 'HyppoAI\'s CallGuard system answers every inbound call, qualifies leads, and books appointments — 24/7.',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata: Metadata = buildMetadata({
+  title: 'AI Phone Receptionist CallGuard — HyppoAI | Palm Bay, FL',
+  description: 'HyppoAI\'s CallGuard answers every call, qualifies leads & books appointments 24/7 in Palm Bay, FL. Never miss a lead. Call (732) 962-3725.',
+  keywords: ['AI phone receptionist', 'AI call answering', 'missed call automation', 'lead qualification AI', 'appointment booking AI', 'CallGuard', '24/7 receptionist', 'small business phone AI', 'Palm Bay Florida', 'HyppoAI', 'inbound call automation', 'AI receptionist Florida'],
+  path: '/callguard',
+});
 
 
 export default function CallGuardPage() {

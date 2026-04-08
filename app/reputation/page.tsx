@@ -5,10 +5,14 @@ import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
 import { FlowBorderV } from '@/components/FlowBorder';
 
-export const metadata: Metadata = {
-  title: 'Reputation Management — HyppoAI',
-  description: 'Automate review requests, monitor your online reputation, and respond to feedback — all hands-free.',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata: Metadata = buildMetadata({
+  title: 'Reputation Management Automation — HyppoAI | Palm Bay, FL',
+  description: 'HyppoAI automates review requests & reputation management for businesses in Palm Bay, FL. Build trust on autopilot. Call (732) 962-3725.',
+  keywords: ['reputation management', 'review automation', 'Google reviews', 'automated review requests', 'online reputation', 'small business reviews', 'Palm Bay Florida', 'HyppoAI', 'review generation', 'brand reputation', '5 star reviews', 'reputation monitoring'],
+  path: '/reputation',
+});
 
 
 export default function ReputationPage() {

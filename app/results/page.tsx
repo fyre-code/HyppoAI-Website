@@ -6,11 +6,14 @@ import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
 import { FlowBorderH, FlowBorderV } from '@/components/FlowBorder';
 import ReviewCarousel from '@/components/ReviewCarousel';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Results — HyppoAI',
-  description: 'Real results from real businesses using HyppoAI automation systems.',
-};
+export const metadata: Metadata = buildMetadata({
+  title: 'Client Results & Testimonials — HyppoAI | Palm Bay, FL',
+  description: 'See real results from businesses using HyppoAI automation in Palm Bay, FL. 14 five-star Google reviews. Book a session. Call (732) 962-3725.',
+  keywords: ['HyppoAI results', 'client testimonials', 'AI automation results', 'business automation reviews', 'social media results', 'Google reviews', 'Palm Bay Florida', 'HyppoAI', 'automation ROI', 'customer success', 'AI business results', 'marketing automation results'],
+  path: '/results',
+});
 
 const starPath = "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z";
 

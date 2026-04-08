@@ -6,10 +6,14 @@ import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
 import { FlowBorderH } from '@/components/FlowBorder';
 
-export const metadata: Metadata = {
-  title: 'Social Media ASP — HyppoAI',
-  description: 'HyppoAI\'s Automated Social Posting system keeps your brand active online without you lifting a finger.',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata: Metadata = buildMetadata({
+  title: 'Automated Social Posting (ASP) — HyppoAI | Palm Bay, FL',
+  description: 'HyppoAI provides automated social media posting in Palm Bay, FL. ASP-Form, Echo, Graphic & Rank systems. Call (732) 962-3725.',
+  keywords: ['automated social posting', 'social media automation', 'ASP-Form', 'ASP-Echo', 'ASP-Graphic', 'ASP-Rank', 'AI social media', 'small business social media', 'Palm Bay Florida', 'HyppoAI', 'automated content posting', 'social media management'],
+  path: '/asp',
+});
 
 const aspSystems = [
   {

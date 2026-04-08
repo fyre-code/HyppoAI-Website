@@ -5,11 +5,14 @@ import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
 import { FlowBorderV } from '@/components/FlowBorder';
 import NextAvailableDate from '@/components/NextAvailableDate';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Contact — HyppoAI',
-  description: 'Book a strategy session with HyppoAI. We\'ll show you exactly what automation looks like for your business.',
-};
+export const metadata: Metadata = buildMetadata({
+  title: 'Contact HyppoAI — Book a Free Strategy Session | Palm Bay, FL',
+  description: 'Book a free 30-min strategy session with HyppoAI in Palm Bay, FL. See exactly how automation works for your business. Call (732) 962-3725.',
+  keywords: ['contact HyppoAI', 'book strategy session', 'business automation consultation', 'AI automation demo', 'Palm Bay Florida', 'HyppoAI contact', 'free strategy session', 'automation booking', 'small business consultation', 'AI consultation', 'Hyppo Advertising contact'],
+  path: '/contact',
+});
 
 export default function ContactPage() {
   return (

@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy — HyppoAI',
-};
+export const metadata: Metadata = buildMetadata({
+  title: 'Privacy Policy — HyppoAI | Palm Bay, FL',
+  description: 'Read the Privacy Policy for HyppoAI (Hyppo Advertising, Inc) in Palm Bay, FL. Questions? Contact us at (732) 962-3725.',
+  keywords: ['HyppoAI privacy policy', 'Hyppo Advertising privacy', 'data privacy', 'Palm Bay Florida', 'HyppoAI legal', 'privacy statement', 'data protection'],
+  path: '/privacy',
+});
 
 export default function PrivacyPage() {
   return (

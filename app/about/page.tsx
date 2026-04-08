@@ -4,11 +4,14 @@ import Image from 'next/image';
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
 import { FlowBorderV } from '@/components/FlowBorder';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'About — HyppoAI',
-  description: 'We build infrastructure, not marketing. Learn about HyppoAI and the team behind the systems.',
-};
+export const metadata: Metadata = buildMetadata({
+  title: 'About HyppoAI — AI Automation Company | Palm Bay, FL',
+  description: 'HyppoAI builds AI-powered automation infrastructure for small businesses in Palm Bay, FL. Meet the team. Call (732) 962-3725.',
+  keywords: ['about HyppoAI', 'AI automation company', 'Palm Bay Florida', 'Hyppo Advertising', 'Be Good House', 'Joseph Sestito', 'Brandon Gosselin', 'small business automation', 'AI business systems', 'business infrastructure', 'AI company Florida', 'automation team'],
+  path: '/about',
+});
 
 
 export default function AboutPage() {

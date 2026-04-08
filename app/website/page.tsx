@@ -7,10 +7,14 @@ import CircuitBackground from '@/components/CircuitBackground';
 import { FlowBorderH } from '@/components/FlowBorder';
 import HeadingAccent from '@/components/HeadingAccent';
 
-export const metadata: Metadata = {
-  title: 'Website Builds — HyppoAI',
-  description: 'HyppoAI builds websites that convert, rank, and connect to automation — not just look good.',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata: Metadata = buildMetadata({
+  title: 'AI Website Builds — HyppoAI | Palm Bay, FL',
+  description: 'HyppoAI builds conversion-focused websites connected to AI automation for businesses in Palm Bay, FL. Call (732) 962-3725.',
+  keywords: ['AI website design', 'business website', 'conversion website', 'website automation', 'small business website', 'Palm Bay Florida', 'HyppoAI', 'website development', 'lead generating website', 'SEO website', 'AI web design', 'automated website'],
+  path: '/website',
+});
 
 const websiteOptions = [
   {

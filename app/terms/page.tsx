@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Terms of Service — HyppoAI',
-};
+export const metadata: Metadata = buildMetadata({
+  title: 'Terms of Service — HyppoAI | Palm Bay, FL',
+  description: 'Read the Terms of Service for HyppoAI (Hyppo Advertising, Inc) in Palm Bay, FL. Questions? Contact us at (732) 962-3725.',
+  keywords: ['HyppoAI terms of service', 'Hyppo Advertising terms', 'AI automation terms', 'Palm Bay Florida', 'HyppoAI legal', 'terms and conditions', 'service agreement'],
+  path: '/terms',
+});
 
 export default function TermsPage() {
   return (

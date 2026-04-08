@@ -3,10 +3,14 @@ import Link from 'next/link';
 import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 
-export const metadata: Metadata = {
-  title: 'Custom Builds — HyppoAI',
-  description: 'Need something advanced? HyppoAI builds custom AI automation solutions from the ground up.',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata: Metadata = buildMetadata({
+  title: 'Custom AI Automation Builds — HyppoAI | Palm Bay, FL',
+  description: 'HyppoAI builds custom AI automation systems from the ground up for businesses in Palm Bay, FL. Unique solutions. Call (732) 962-3725.',
+  keywords: ['custom AI automation', 'custom automation builds', 'bespoke AI systems', 'custom business automation', 'workflow automation', 'API integrations', 'Palm Bay Florida', 'HyppoAI', 'AI workflow', 'business process automation', 'automation development', 'custom software'],
+  path: '/custom-builds',
+});
 
 export default function CustomBuildsPage() {
   return (

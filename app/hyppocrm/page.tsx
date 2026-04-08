@@ -7,10 +7,14 @@ import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
 import { FlowBorderH } from '@/components/FlowBorder';
 
-export const metadata: Metadata = {
-  title: 'HyppoCRM — HyppoAI',
-  description: 'A CRM built for automation. Track every lead, automate follow-up, and close more deals without manual work.',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata: Metadata = buildMetadata({
+  title: 'HyppoCRM — AI-Powered CRM for Small Business | Palm Bay, FL',
+  description: 'HyppoAI provides HyppoCRM, an AI-powered CRM for small businesses in Palm Bay, FL. Automate follow-up & close more deals. Call (732) 962-3725.',
+  keywords: ['HyppoCRM', 'AI CRM', 'small business CRM', 'automated follow-up', 'lead tracking', 'CRM automation', 'sales automation', 'Palm Bay Florida', 'HyppoAI', 'pipeline management', 'contact management', 'automated CRM'],
+  path: '/hyppocrm',
+});
 
 const features = [
   { title: 'Automated Lead Tracking', description: 'Every lead is captured and logged automatically — from calls, forms, ads, and more.' },

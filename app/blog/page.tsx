@@ -3,11 +3,14 @@ import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import BlogGrid from '@/components/BlogGrid';
 import { getAllPosts } from '@/lib/posts';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Blogs — HyppoAI',
-  description: 'Insights on AI automation, business systems, and growth from HyppoAI.',
-};
+export const metadata: Metadata = buildMetadata({
+  title: 'AI Automation Blog — HyppoAI | Palm Bay, FL',
+  description: 'HyppoAI shares insights on AI automation, business systems & growth for small businesses in Palm Bay, FL. Read the blog. Call (732) 962-3725.',
+  keywords: ['AI automation blog', 'business automation tips', 'small business AI', 'AI systems blog', 'automation insights', 'Palm Bay Florida', 'HyppoAI', 'AI marketing blog', 'business growth tips', 'automation news', 'AI for small business', 'business systems blog'],
+  path: '/blog',
+});
 
 export default function BlogPage() {
   const posts = getAllPosts();
