@@ -95,7 +95,8 @@ const automationSystems = [
       'Custom-built automation systems designed around your exact workflows, tools, and business logic.',
     href: '/custom-builds',
     cta: 'Get a Custom Build',
-    image: '/custom-builds.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775747524474_custom-business-automation-modular-architecture.png',
+    alt: 'Isometric 3D illustration of interconnected blue and black modular cubes representing custom-built automation blocks, gears, and data nodes for a business workflow.',
   },
 ];
 
