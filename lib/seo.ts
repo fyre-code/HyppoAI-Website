@@ -3,8 +3,7 @@ import type { Metadata } from 'next';
 const SITE_NAME = 'HyppoAI';
 const BASE_URL = 'https://www.hyppohq.ai';
 
-// Swap this with the GHL subaccount media storage URL when available
-export const LOGO_OG_URL = '/logo.png';
+export const LOGO_OG_URL = 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775745255006_hyppoai-tech-logo-circuit-design.png';
 export const LOGO_ALT = 'HyppoAI logo — AI Business Automation, Palm Bay FL';
 
 export function buildMetadata({
