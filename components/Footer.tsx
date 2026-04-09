@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-3 gap-4 md:gap-12 mb-12">
           {/* Brand */}
           <div>
-            <Image src="/logo.png" alt="HyppoAI" width={480} height={144} className="h-16 md:h-32 w-auto mb-4" />
+            <Image src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775745255006_hyppoai-tech-logo-circuit-design.png" alt="HyppoAI" width={480} height={144} className="h-16 md:h-32 w-auto mb-4" />
           </div>
 
           {/* Social Media */}

@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="max-w-[1170px] mx-auto px-6 flex items-center justify-between h-20 md:h-36">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <Image src="/logo.png" alt="HyppoAI" width={480} height={144} className="h-12 md:h-32 w-auto" priority />
+          <Image src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775745255006_hyppoai-tech-logo-circuit-design.png" alt="HyppoAI" width={480} height={144} className="h-12 md:h-32 w-auto" priority />
         </Link>
 
         {/* Desktop Nav */}
