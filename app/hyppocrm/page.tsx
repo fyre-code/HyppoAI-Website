@@ -50,12 +50,14 @@ export default function HyppoCRMPage() {
               {
                 subheading: <>Hyppo<span className="text-[#2cd9fe]">CRM</span> Basic</>,
                 text: 'HyppoCRM Basic gives you one place to capture, organize, and manage all leads, jobs, and payments without spreadsheets, sticky notes, or scattered tools.',
-                image: '/hyppocrm-basic.png',
+                image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775750016936_hyppocrm-basic-automated-workflow-dashboard.png',
+                alt: 'HyppoCRM Basic workflow illustration demonstrating a simplified business automation sequence, featuring integrated modules for tracking tasks, financial data, and performance analytics.',
               },
               {
                 subheading: <>Hyppo<span className="text-[#2cd9fe]">CRM</span> Plus</>,
                 text: 'HyppoCRM Plus adds automated email and SMS follow-up so leads are contacted instantly and consistently without manual outreach.',
-                image: '/hyppocrm-plus.png',
+                image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775750150298_hyppocrm-plus-advanced-automation-lead-funnel.png',
+                alt: 'HyppoCRM Plus advanced automation workflow illustrating high-volume lead capture and automated multi-channel distribution for SMS and email marketing campaigns.',
               },
             ].map((row, i) => (
               <React.Fragment key={i}>
@@ -66,7 +68,7 @@ export default function HyppoCRMPage() {
                   <p className="text-[#000000] text-[21px] leading-relaxed">{row.text}</p>
                 </div>
                 <div className="p-10 flex items-center justify-center relative">
-                  <Image src={row.image} alt={String(row.subheading)} width={500} height={400} className="object-contain w-full h-auto" />
+                  <Image src={row.image} alt={(row as {alt?: string}).alt ?? String(row.subheading)} width={500} height={400} className="object-contain w-full h-auto" />
                 </div>
               </div>
               </React.Fragment>

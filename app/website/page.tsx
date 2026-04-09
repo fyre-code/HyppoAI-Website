@@ -20,17 +20,20 @@ const websiteOptions = [
   {
     subheading: 'Simple Landing Page',
     text: 'A fast, focused landing page designed to capture leads quickly and route them directly into your CRM and automation workflows.',
-    image: '/website-landing.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775750349501_simple-lead-capture-landing-page-crm-integration.png',
+    alt: 'HyppoAI landing page illustration demonstrating instant lead capture and automated integration with CRM databases and time-triggered marketing workflows.',
   },
   {
     subheading: 'Fully Optimized Website',
     text: 'A multi-page website built for speed, search visibility, and conversion, fully connected to CRM, automations, and follow-up systems.',
-    image: '/website-optimized.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775750523658_fully-optimized-business-website-architecture.png',
+    alt: 'HyppoAI fully optimized website illustration, detailing the connection between high-speed web design, organized site structure, and integrated CRM automation for lead conversion.',
   },
   {
     subheading: 'Full eCommerce Store',
     text: 'A complete eCommerce website designed to sell products, process payments, and trigger post-purchase automations automatically.',
-    image: '/website-ecommerce.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775750707910_hyppoai-complete-ecommerce-website-automation.png',
+    alt: 'HyppoAI Full eCommerce Store illustration demonstrating the automated flow from product purchase and payment processing to post-purchase fulfillment and customer communication.',
   },
 ];
 
@@ -81,7 +84,7 @@ export default function WebsitePage() {
                     </div>
                   </div>
                   <div className="p-10 flex items-center justify-center">
-                    <Image src={row.image} alt={row.subheading} width={500} height={400} className="object-contain w-full h-auto" />
+                    <Image src={row.image} alt={(row as {alt?: string}).alt ?? row.subheading} width={500} height={400} className="object-contain w-full h-auto" />
                   </div>
                 </div>
                 </React.Fragment>

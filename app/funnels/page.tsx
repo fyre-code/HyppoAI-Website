@@ -20,19 +20,22 @@ const funnelOptions = [
     subheading: 'AI-Generated Creatives',
     text: "AI generates and refreshes ad creatives continuously so performance doesn't stall due to creative fatigue.",
     cta: 'Automate Creatives',
-    image: '/funnels-creatives.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775750912247_ai-generated-ad-creatives.png',
+    alt: "HyppoAI's AI-Generated Creatives workflow: An automated system that continuously refreshes and optimizes social media ad assets to maintain high performance and engagement scale.",
   },
   {
     subheading: 'Funnel & Ad Management',
     text: 'Ads are managed alongside conversion-optimized funnels designed to capture, qualify, and route leads automatically.',
     cta: 'Automate Funnels',
-    image: '/funnels-funnels.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775751122836_hyppo-ai-ad-management-conversion-funnel.png',
+    alt: 'HyppoAI Funnel and Ad Management illustration: Scaling business ads through conversion-optimized funnels that automatically capture, qualify, and route leads into a backend automation system.',
   },
   {
     subheading: 'SMS & Email Automations',
     text: 'Every lead from ads triggers automated SMS and email follow-ups to increase contact rate, speed to response, and conversions.',
     cta: 'Automate Follow-Up',
-    image: '/funnels-sms.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775751342628_sms-email-marketing-automation-lead-followup.png',
+    alt: 'HyppoAI SMS and Email Automations workflow illustrating the automated process of contacting leads instantly via text and email to improve response times and conversion rates.',
   },
 ];
 
@@ -80,7 +83,7 @@ export default function FunnelsPage() {
                     </div>
                   </div>
                   <div className="p-10 flex items-center justify-center">
-                    <Image src={row.image} alt={row.subheading} width={500} height={400} className="object-contain w-full h-auto" />
+                    <Image src={row.image} alt={(row as {alt?: string}).alt ?? row.subheading} width={500} height={400} className="object-contain w-full h-auto" />
                   </div>
                 </div>
               </React.Fragment>
