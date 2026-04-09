@@ -71,7 +71,8 @@ const automationSystems = [
       'Websites built for speed, SEO structure, and conversions, acting as a system — not a static brochure.',
     href: '/website',
     cta: 'Automate My Website',
-    image: '/websites.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775746737941_ai-powered-business-website-builder-automation.png',
+    alt: 'A conceptual diagram of an AI website builder for businesses, showing a site interface connected to automated time-triggers, logic workflows, and lead conversion funnels.',
   },
   {
     title: '',
