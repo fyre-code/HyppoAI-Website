@@ -83,7 +83,8 @@ const automationSystems = [
       'Funnels are designed to route traffic, trigger automations, and move prospects forward automatically — not just collect form fills.',
     href: '/funnels',
     cta: 'Automate My Funnel',
-    image: '/advertising.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775747166255_automated-marketing-funnel-conversion-retention-stages.png',
+    alt: 'A complete marketing funnel diagram showing traffic sources like Social, SEO, and Ads flowing into an automation trigger stage. The workflow illustrates behavior matching that leads to email drips and content delivery, ultimately resulting in qualified leads, sales, and loyal customers.',
   },
   {
     title: '',
