@@ -47,7 +47,8 @@ const automationSystems = [
       'All leads are captured into our CRM (HyppoCRM), organized, and followed up with automatically via SMS, email, and pipeline routing — nothing falls through the cracks.',
     href: '/hyppocrm',
     cta: 'Automate My Leads',
-    image: '/leads-and-follow-ups.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775746313633_hyppocrm-lead-management-automation-workflow.png',
+    alt: 'A workflow diagram showing HyppoCRM converting incoming leads into automated follow-up actions including emails, messages, and task lists.',
   },
   {
     title: '',
