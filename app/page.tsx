@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import ImageLightbox from '@/components/ImageLightbox';
 import ReviewsGrid from '@/components/ReviewsGrid';
 import { buildMetadata } from '@/lib/seo';
 
@@ -338,7 +339,7 @@ export default function HomePage() {
                 {/* Image or color block */}
                 {system.image ? (
                   <div className="md:w-1/2 relative min-h-[280px] md:min-h-[560px] bg-[#c9c9c9] order-last md:order-none">
-                    <Image src={system.image} alt={(system as {alt?: string}).alt ?? system.title} fill className="object-contain" />
+                    <ImageLightbox src={system.image} alt={(system as {alt?: string}).alt ?? system.title} fill className="object-contain" />
                   </div>
                 ) : (
                   <div className="md:w-1/2 bg-[#b8b8b8] flex items-center justify-center p-16 min-h-[280px] md:min-h-[560px] order-last md:order-none">

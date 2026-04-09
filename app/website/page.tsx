@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import ImageLightbox from '@/components/ImageLightbox';
 import React from 'react';
 import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
@@ -84,7 +85,7 @@ export default function WebsitePage() {
                     </div>
                   </div>
                   <div className="p-10 flex items-center justify-center">
-                    <Image src={row.image} alt={(row as {alt?: string}).alt ?? row.subheading} width={500} height={400} className="object-contain w-full h-auto" />
+                    <ImageLightbox src={row.image} alt={(row as {alt?: string}).alt ?? row.subheading} width={500} height={400} className="object-contain w-full h-auto" />
                   </div>
                 </div>
                 </React.Fragment>

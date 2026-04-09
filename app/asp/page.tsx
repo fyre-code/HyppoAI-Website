@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import ImageLightbox from '@/components/ImageLightbox';
 import { FadeUp, FadeLeft, FadeRight, StaggerList, StaggerItem, HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
@@ -138,7 +139,7 @@ export default function ASPPage() {
                 </div>
                 <div className={`relative shrink-0 w-full max-w-[400px] aspect-square bg-[#000000] flex items-center justify-center mx-auto md:mx-0 ${imageRight ? 'order-last' : 'order-last md:order-first'}`}>
                   {system.image ? (
-                    <Image src={system.image} alt={(system as {alt?: string}).alt ?? system.title} width={400} height={400} className="object-contain w-full h-full" />
+                    <ImageLightbox src={system.image} alt={(system as {alt?: string}).alt ?? system.title} width={400} height={400} className="object-contain w-full h-full" />
                   ) : (
                     <span className="text-[#333] text-sm">Image coming soon</span>
                   )}

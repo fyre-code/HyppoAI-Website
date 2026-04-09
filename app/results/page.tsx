@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import ImageLightbox from '@/components/ImageLightbox';
 import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
@@ -117,6 +118,7 @@ const videoTestimonials: {
   videoId?: string;
   startTime?: number;
   image?: string;
+  alt?: string;
 }[] = [
   {
     name: 'Jennifer Barton',
@@ -281,9 +283,9 @@ export default function ResultsPage() {
                     {/* Right: YouTube embed or image */}
                     <div className="flex items-center justify-center mt-8 md:mt-0">
                       {t.image ? (
-                        <Image
+                        <ImageLightbox
                           src={t.image}
-                          alt={(t as {alt?: string}).alt ?? `${t.name} results`}
+                          alt={t.alt ?? `${t.name} results`}
                           width={600}
                           height={400}
                           className="w-full h-auto object-contain border border-[#1a1a1a]"
