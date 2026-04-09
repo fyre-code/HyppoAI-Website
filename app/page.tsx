@@ -59,7 +59,8 @@ const automationSystems = [
       'Review requests and management run in the background to consistently generate and protect 5-star reviews.',
     href: '/reputation',
     cta: 'Automate My Reviews',
-    image: '/reputation.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775746493841_automated-reputation-management-review-workflow.png',
+    alt: 'A flowchart showing a reputation management system where 4-star and 5-star reviews are published, while lower ratings trigger a support ticket for internal resolution.',
   },
   {
     title: '',
