@@ -31,7 +31,7 @@ export default function BlogGrid({ posts }: { posts: Post[] }) {
               <div className="relative w-full h-48 overflow-hidden">
                 <Image
                   src={post.image}
-                  alt={post.title}
+                  alt={post.imageAlt ?? post.title}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"

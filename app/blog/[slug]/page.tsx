@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: post.excerpt.slice(0, 155),
     keywords: post.tags ?? [],
     path: `/blog/${slug}`,
-    imageUrl: post.image ? `https://www.hyppohq.ai${post.image}` : LOGO_OG_URL,
-    imageAlt: post.image ? post.title : LOGO_ALT,
+    imageUrl: post.image ?? LOGO_OG_URL,
+    imageAlt: post.imageAlt ?? (post.image ? post.title : LOGO_ALT),
   });
 }
 
@@ -73,7 +73,7 @@ export default async function PostPage({ params }: Props) {
           <div className="max-w-[800px] mx-auto relative w-full h-64 md:h-[420px] overflow-hidden">
             <Image
               src={post.image}
-              alt={post.title}
+              alt={post.imageAlt ?? post.title}
               fill
               className="object-cover"
               priority

@@ -6,7 +6,8 @@ export const posts: Post[] = [
     title: "Why Sticky Notes and Notebooks Don't Scale for Modern Service Businesses",
     date: 'April 6, 2026',
     author: 'Joseph Sestito III',
-    image: '/blog/why-sticky-notes.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775751977602_why-sticky-notes.png',
+    imageAlt: 'Visual comparison of manual business tracking versus HyppoHQ digital automation, illustrating how centralizing data eliminates the limitations of physical notebooks for scaling service businesses.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up', 'Systems, Scaling & Operations'],
     excerpt: "Sticky notes and notebooks feel productive — until a lead falls through a crack or a task gets forgotten. Here's why they don't scale.",
     content: `<h2>Why Sticky Notes and Notebooks Don't Scale for Modern Service Businesses</h2>
@@ -71,7 +72,8 @@ export const posts: Post[] = [
     title: 'Why Editing Speed Matters More Than Perfection in Content',
     date: 'April 3, 2026',
     author: 'Joseph Sestito III',
-    image: '/blog/editing-speed.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775752170423_content-editing-speed-vs-perfection-performance.png',
+    imageAlt: 'A stylized blue rocket ship launching through space, integrated with a circuit board processor and document icons to represent the high-speed editing and deployment of business content.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'ChatGPT & AI Productivity Tips', 'Systems, Scaling & Operations', 'Owner Mindset & Decision Support'],
     excerpt: "Waiting for the perfect post means posting less. Here's why speed beats perfection for small business content.",
     content: `<h2>Why Editing Speed Matters More Than Perfection</h2>
@@ -127,7 +129,8 @@ export const posts: Post[] = [
     title: 'Why Many Businesses Are Harder to Reach Than They Think',
     date: 'April 2, 2026',
     author: 'Joseph Sestito III',
-    image: '/blog/businesses-harder-to-reach.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775752359811_businesses-harder-to-reach.png',
+    imageAlt: 'A conceptual diagram showing a fragmented maze of icons for phone calls, emails, and texts being filtered through a glowing AI brain into a single, unified stream of communication.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up'],
     excerpt: "Most business owners think they're easy to contact. Their customers often disagree. Here's what gets in the way.",
     content: `<h2>The Perception Gap: Why Owners Think They Are Easy to Reach</h2>
@@ -172,7 +175,8 @@ export const posts: Post[] = [
     title: 'How Modern Businesses Handle Repetitive Tasks Differently',
     date: 'April 1, 2026',
     author: 'Joseph Sestito III',
-    image: '/blog/repetitive-tasks.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775752472124_repetitive-tasks.png',
+    imageAlt: 'A workflow diagram showing manual tasks like paperwork and keyboard entry being funneled into a central AI neural network, which then automates scheduling, financial growth, and customer communication for a business operator.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: "The businesses growing fastest aren't working harder — they've removed themselves from the repetitive work entirely.",
     content: `<h2>How Modern Businesses Handle Repetitive Tasks Differently</h2>
@@ -210,7 +214,8 @@ export const posts: Post[] = [
     title: 'How AI, Automations, Follow-Ups, and APIs Connect',
     date: 'March 31, 2026',
     author: 'Joseph Sestito III',
-    image: '/blog/ai-automations-apis.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775752683026_ai-automations-apis.png',
+    imageAlt: 'A circular workflow diagram featuring a central AI brain icon connected via data paths to various business nodes including SMS, email, calendars, databases, and external API connectors, representing a fully integrated automation ecosystem.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up', 'Systems, Scaling & Operations'],
     excerpt: "AI doesn't work alone. It connects with automations, follow-up sequences, and APIs to build systems that run without you.",
     content: `<h2>How AI, Automations, Follow-Ups, and APIs Connect in One System</h2>
@@ -254,7 +259,8 @@ export const posts: Post[] = [
     title: 'How HyppoCRM Helps Businesses Stay Organized Without Spreadsheets',
     date: 'March 27, 2026',
     author: 'Joseph Sestito III',
-    image: '/blog/hyppocrm-spreadsheets.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775752770621_hyppocrm-spreadsheets.png',
+    imageAlt: 'An infographic demonstrating the transition from a messy whiteboard with physical sticky notes and notebooks to a structured digital CRM dashboard featuring task lists, team notifications, database management, and growth analytics.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up', 'Tools & Systems We Use', 'Systems, Scaling & Operations'],
     excerpt: 'Spreadsheets break down when your business grows. HyppoCRM keeps everything in one place — automatically.',
     content: `<h2>How HyppoCRM Helps Businesses Stay Organized Without Spreadsheets</h2>
@@ -293,7 +299,8 @@ export const posts: Post[] = [
     title: 'How to Talk to ChatGPT Like an Employee',
     date: 'March 26, 2026',
     author: 'Joseph Sestito III',
-    image: '/blog/chatgpt-employee.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775752948721_chatgpt-employee.png',
+    imageAlt: 'HyppoAI guide on talking to ChatGPT like an employee, visualizing a structured prompt engineering framework to ensure AI outputs meet professional business standards.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'ChatGPT & AI Productivity Tips', 'Systems, Scaling & Operations', 'Owner Mindset & Decision Support'],
     excerpt: 'Most people use ChatGPT like a search engine. The results are better when you treat it like a new hire who needs direction.',
     content: `<h2>How to Talk to ChatGPT Like a Capable Digital Employee</h2>
@@ -331,7 +338,8 @@ export const posts: Post[] = [
     title: 'Why Forms Are the Front Door to Systems',
     date: 'March 25, 2026',
     author: 'Joseph Sestito III',
-    image: '/blog/forms-front-door.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775753058109_forms-front-door.png',
+    imageAlt: 'HyppoAI visual guide explaining why forms are the front door to systems, showcasing the automated routing of form data into CRMs and AI-driven task management for modern service businesses.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Tools & Systems We Use', 'Systems, Scaling & Operations'],
     excerpt: "A form isn't just a way to collect info — it's the trigger that starts every automation in your business.",
     content: `<h2>Forms as the Bridge Between People and Systems</h2>
@@ -366,7 +374,8 @@ export const posts: Post[] = [
     title: 'How AI Video Fits Into Modern Marketing Systems',
     date: 'March 24, 2026',
     author: 'Joseph Sestito III',
-    image: '/blog/ai-video-marketing-5218.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775753228994_ai-video-marketing-5218.png',
+    imageAlt: 'HyppoAI illustration of an integrated AI video marketing system, showcasing the automated transition from raw video data to a multichannel content strategy with real-time performance analytics.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: 'AI-generated video makes consistent content possible without a camera, a crew, or a recording schedule.',
     content: `<h2>What Do We Mean by AI Video?</h2>
@@ -406,7 +415,8 @@ export const posts: Post[] = [
     title: 'How Automated File Handling Saves Time Quietly',
     date: 'March 23, 2026',
     author: 'Joseph Sestito III',
-    image: '/blog/file-handling.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775753346581_file-handling.png',
+    imageAlt: 'HyppoAI illustration of an automated file handling system, visualizing how AI sorts messy incoming documents into a structured digital filing system to save administrative time and improve data retrieval.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: "Nobody talks about file handling — but the time lost to it adds up fast. Automation fixes it in the background.",
     content: `<h2>How Automated File Handling Quietly Saves Time</h2>

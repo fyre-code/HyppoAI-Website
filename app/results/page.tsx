@@ -143,7 +143,8 @@ const videoTestimonials: {
       '108% increase in engagement',
       '~1–2 inbound customers per week attributed to social activity',
     ],
-    image: '/hvac-results.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775751608465_hvac-marketing-case-study-asp-form-graphic-results.png',
+    alt: 'A social media performance dashboard for a local HVAC company using ASP-Form and ASP-Graphic, showing a 262% increase in views and a 108% increase in interactions over 90 days.',
   },
   {
     name: 'Diane Bryson',
@@ -282,7 +283,7 @@ export default function ResultsPage() {
                       {t.image ? (
                         <Image
                           src={t.image}
-                          alt={`${t.name} results`}
+                          alt={(t as {alt?: string}).alt ?? `${t.name} results`}
                           width={600}
                           height={400}
                           className="w-full h-auto object-contain border border-[#1a1a1a]"
