@@ -19,22 +19,26 @@ const aspSystems = [
   {
     title: 'ASP-Form',
     description: 'Upload up to 10 photos or a video to a simple form, and the ASP-Form automatically generates a description and publishes optimized posts to all of your accounts without manual work.',
-    image: '/asp-form.webp',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775748733985_asp-form-automated-social-media-posting-generator.webp',
+    alt: 'A diagram of the ASP-Form workflow showing images and video being uploaded via a mobile interface and automatically distributed as optimized posts to multiple social media channels.',
   },
   {
     title: 'ASP-Echo',
     description: 'AI avatar videos are generated, captioned, and distributed across social platforms to maintain consistent authority and presence at scale.',
-    image: '/asp-echo.webp',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775749318116_asp-echo-ai-avatar-video-automation-distribution.webp',
+    alt: 'A workflow diagram for ASP-Echo showing how AI avatar videos are automatically generated, captioned, and distributed across social media platforms to scale brand authority and digital presence.',
   },
   {
     title: 'ASP-Graphic',
     description: 'High-quality, branded image posts are generated automatically, replacing the need for a graphic designer or ongoing creative work.',
-    image: '/asp-graphic.webp',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775749485833_asp-graphic-automated-visual-content-engine.webp',
+    alt: 'A workflow diagram for ASP-Graphic showing a library of raw images being processed by a central AI gear engine and distributed as optimized posts to social media, email, and web platforms.',
   },
   {
     title: 'ASP-Rank',
     description: 'SEO blog content is generated and automatically repurposed into social posts to improve visibility, authority, and long-term rankings.',
-    image: '/asp-rank.webp',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775749820470_asp-rank-seo-content-optimization.webp',
+    alt: 'A workflow diagram for ASP-Rank showing raw content being optimized by a gear engine, achieving a top search ranking, and then being syndicated to Facebook, X, Instagram, and LinkedIn.',
   },
 ];
 
@@ -134,7 +138,7 @@ export default function ASPPage() {
                 </div>
                 <div className={`relative shrink-0 w-full max-w-[400px] aspect-square bg-[#000000] flex items-center justify-center mx-auto md:mx-0 ${imageRight ? 'order-last' : 'order-last md:order-first'}`}>
                   {system.image ? (
-                    <Image src={system.image} alt={system.title} width={400} height={400} className="object-contain w-full h-full" />
+                    <Image src={system.image} alt={(system as {alt?: string}).alt ?? system.title} width={400} height={400} className="object-contain w-full h-full" />
                   ) : (
                     <span className="text-[#333] text-sm">Image coming soon</span>
                   )}

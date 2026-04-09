@@ -84,8 +84,8 @@ export default function AboutPage() {
             </div>
             <div className="shrink-0">
               <Image
-                src="/be-good-house-logo.png"
-                alt="The Be Good House"
+                src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775748461612_be-good-house-logo.png"
+                alt="Official logo for Be Good House featuring a black 'BG' monogram under a crown, enclosed within a laurel wreath, representing premium quality and leadership."
                 width={400}
                 height={200}
                 className="object-contain"
@@ -107,13 +107,15 @@ export default function AboutPage() {
                 name: 'Brandon Gosselin',
                 title: 'CEO',
                 bio: 'Brandon Gosselin is a $10 million tech founder, former U.S. Presidential Fellow Appointee, and motivational speaker. He is also the founder of The Be Good House, a live-in business incubator for overlooked and misunderstood individuals that helps them found their own companies. Shaped by his personal journey, Brandon\'s "Be Good" philosophy guides everything we do at HyppoAI.',
-                image: '/brandon.jpg',
+                image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775747691819_brandon-gosselin-hyppoai-founder.jpg',
+                alt: 'Brandon Gosselin, founder of HyppoAI, smiling in a navy blazer and black hat.',
               },
               {
                 name: 'Joseph Sestito',
                 title: 'Director of Artificial Intelligence',
                 bio: 'Joseph is an MBA Candidate at Florida Atlantic University. Coming from a family of entrepreneurs who inspired him, he co-founded Hyppo with Brandon to help small businesses automate tedious tasks. Joseph is the Inaugural Be Good House Scholar.',
-                image: '/joseph.jpg',
+                image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775748303688_joseph-sestito-hyppoai-technical-automation-expert.jpg',
+                alt: 'Joseph Sestito, a technical specialist at HyppoAI, working on a laptop to develop AI automation solutions.',
               },
             ].map((founder, i) => (
               <>
@@ -121,7 +123,7 @@ export default function AboutPage() {
               <div key={founder.name} className="p-6 md:p-16 flex flex-col">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 mb-6">
                   <div className="w-[200px] h-[200px] rounded-full overflow-hidden border-2 border-[#2cd9fe] shrink-0">
-                    <Image src={founder.image} alt={founder.name} width={200} height={200} className="object-cover w-full h-full" />
+                    <Image src={founder.image} alt={(founder as {alt?: string}).alt ?? founder.name} width={200} height={200} className="object-cover w-full h-full" />
                   </div>
                   <div className="flex flex-col justify-center">
                     <h3 className="text-[21px] md:text-[28px] font-bold text-white mb-1">{founder.name}</h3>
