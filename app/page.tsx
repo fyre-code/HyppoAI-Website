@@ -21,7 +21,8 @@ const automationSystems = [
     description:
       'Our ASP (Auto Social Posting) automations run your social media accounts for you — no manual posting required.',
     href: '/asp',
-    image: '/asp.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775745794433_ai-social-media-automation-workflow-content-processing.png',
+    alt: 'AI automation workflow showing content input processed into multiple published social media posts',
     cta: 'Automate My Socials',
   },
   {
@@ -34,7 +35,8 @@ const automationSystems = [
       'AI phone agents answer calls instantly, filter spam, qualify callers, book appointments, and send real-time notifications so no call is missed.',
     href: '/callguard',
     cta: 'Automate My Phone',
-    image: '/phone-calls.png',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775746045557_ai-call-automation-workflow-lead-processing-scheduling.png',
+    alt: 'AI call automation workflow showing phone input processed into lead filtering, task management, and scheduling',
   },
   {
     title: '',
@@ -329,7 +331,7 @@ export default function HomePage() {
                 {/* Image or color block */}
                 {system.image ? (
                   <div className="md:w-1/2 relative min-h-[280px] md:min-h-[560px] bg-[#c9c9c9] order-last md:order-none">
-                    <Image src={system.image} alt={system.title} fill className="object-contain" />
+                    <Image src={system.image} alt={(system as {alt?: string}).alt ?? system.title} fill className="object-contain" />
                   </div>
                 ) : (
                   <div className="md:w-1/2 bg-[#b8b8b8] flex items-center justify-center p-16 min-h-[280px] md:min-h-[560px] order-last md:order-none">
