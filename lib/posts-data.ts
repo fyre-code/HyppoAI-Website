@@ -463,6 +463,8 @@ export const posts: Post[] = [
     title: 'How AI Video Fits Into Modern Marketing Systems',
     date: 'March 19, 2026',
     author: 'Joseph Sestito III',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1776726088432_ai-video-marketing-system-funnel-integration.png',
+    imageAlt: 'A workflow diagram showing an AI avatar presenter connected by blue data paths to icons for a website, email platform, CRM, social media, and paid ads — illustrating how AI video integrates across a modern marketing funnel.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Tools & Systems We Use', 'Systems, Scaling & Operations'],
     excerpt: 'AI video tools are reshaping how service businesses create, distribute, and measure video content across every stage of the funnel.',
     content: `<h2>AI Video as a System Component, Not a One-Off Tactic</h2>
@@ -495,6 +497,8 @@ export const posts: Post[] = [
     title: 'Automatic File Naming and Sorting Explained',
     date: 'March 18, 2026',
     author: 'Joseph Sestito III',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1776726089457_automatic-file-naming-sorting-explained.png',
+    imageAlt: 'An infographic showing a chaotic pile of unlabeled documents being fed into a central AI gear engine, which outputs neatly organized, color-coded and labeled folders — illustrating automated file naming and sorting.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: 'Inconsistent file names and cluttered folders slow everything down. Here\'s how automatic sorting removes the problem.',
     content: `<h2>From Manual Filing to Automated Systems</h2>
@@ -532,6 +536,8 @@ export const posts: Post[] = [
     title: 'Why ChatGPT Needs to Know the Target Audience',
     date: 'March 17, 2026',
     author: 'Joseph Sestito III',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1776726092138_chatgpt-target-audience-prompt-optimization.png',
+    imageAlt: 'A split diagram comparing a generic ChatGPT prompt producing vague output versus a prompt enriched with audience profile icons producing sharp, targeted business content.',
     tags: ['AI for Service Businesses', 'Business Automation Explained'],
     excerpt: 'Generic prompts produce generic output. Tell ChatGPT exactly who it\'s writing for and everything gets sharper.',
     content: `<h2>Why ChatGPT Needs to Know Who the Output Is For</h2>
@@ -571,6 +577,8 @@ export const posts: Post[] = [
     title: 'AI-Generated Video Without Recording',
     date: 'March 16, 2026',
     author: 'Joseph Sestito III',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1776726086589_ai-generated-video-without-recording.png',
+    imageAlt: 'A workflow showing a text script feeding into an AI avatar generator producing a finished branded video displayed on phone, laptop, and social media screens — no camera or recording equipment shown.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: "You don't need to be on camera to have a video presence. AI avatar tools handle the recording for you.",
     content: `<h2>What Happens When Video Content No Longer Requires Recording</h2>
@@ -604,6 +612,8 @@ export const posts: Post[] = [
     title: "What Zapier Does Best and Where It Starts to Break",
     date: 'March 13, 2026',
     author: 'Joseph Sestito III',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1776726094949_zapier-limits-automation-comparison.png',
+    imageAlt: 'A side-by-side diagram showing Zapier successfully connecting simple app-to-app workflows on the left, and hitting a wall with complex branching logic and high-volume tasks on the right.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up', 'AI Receptionists & Voice Automation', 'Tools & Systems We Use', 'Systems, Scaling & Operations'],
     excerpt: "Zapier is powerful for simple connections between tools — but there's a ceiling. Here's where it works and where it doesn't.",
     content: `<h2>What Zapier Does Best (And Where It Starts to Break)</h2>
@@ -641,6 +651,8 @@ export const posts: Post[] = [
     title: 'Why Scheduling Is a System Problem',
     date: 'March 12, 2026',
     author: 'Joseph Sestito III',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1776726094023_scheduling-system-problem-automation.png',
+    imageAlt: 'An infographic showing a fractured calendar with conflicting bookings transitioning via an AI gear engine to a clean automated scheduling dashboard with confirmed appointments and automated reminders.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: "Scheduling chaos isn't a calendar problem — it's a systems problem. Here's how to fix the root cause.",
     content: `<h2>Why Scheduling Is a System Problem, Not Just a Calendar Issue</h2>
@@ -678,6 +690,8 @@ export const posts: Post[] = [
     title: 'How Automation Helps Owners Step Out of the Weeds',
     date: 'March 11, 2026',
     author: 'Joseph Sestito III',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1776726090336_automation-owners-weeds.png',
+    imageAlt: 'A visual showing a business owner buried under stacked tasks on the left, transitioning to the same owner elevated above an automated system of interconnected nodes handling each task automatically below them.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up', 'Systems, Scaling & Operations', 'Owner Mindset & Decision Support'],
     excerpt: 'Most business owners are stuck doing work their business should be doing. Automation creates the exit.',
     content: `<h2>How Automation Helps Owners Step Out of the Weeds</h2>
@@ -721,6 +735,8 @@ export const posts: Post[] = [
     title: 'The Real Reason Leads Go Cold So Fast',
     date: 'March 9, 2026',
     author: 'Joseph Sestito III',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1776726093164_leads-go-cold-fast-response-automation.png',
+    imageAlt: 'A timeline diagram showing a lead inquiry arriving then a long red gap before a manual response resulting in a cold lead, beside an automated system that responds instantly via SMS and email keeping the lead warm.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Missed Calls, Leads & Follow-Up'],
     excerpt: 'Speed is the most important factor in lead conversion — and most businesses are too slow to respond.',
     content: `<h2>The Real Reason Leads Go Cold So Fast</h2>
@@ -765,6 +781,8 @@ export const posts: Post[] = [
     title: 'AI Image Generators: Small Business Use Cases',
     date: 'March 7, 2026',
     author: 'Joseph Sestito III',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1776726087435_ai-image-generators-small-business.png',
+    imageAlt: 'A central AI image generator interface connected by blue data paths to a grid of output use cases including a promotional flyer, social media post, seasonal graphic, product photo variation, and on-brand illustration.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'Systems, Scaling & Operations'],
     excerpt: "AI image generators aren't just for artists. Here's how small businesses are using them to replace design costs.",
     content: `<h2>AI Image Generators for Small Businesses: Practical Use Cases</h2>
@@ -814,6 +832,8 @@ export const posts: Post[] = [
     title: 'Why ChatGPT Context Matters More Than Better Questions',
     date: 'March 7, 2026',
     author: 'Joseph Sestito III',
+    image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1776726091241_chatgpt-context-matters-prompt-quality.png',
+    imageAlt: 'A diagram of a ChatGPT interface with two input paths: one labeled prompt only producing generic output, and one labeled prompt plus context producing rich, relevant business content.',
     tags: ['AI for Service Businesses', 'Business Automation Explained', 'ChatGPT & AI Productivity Tips'],
     excerpt: 'The prompt isn\'t the problem. The missing context is. Here\'s how to give ChatGPT what it actually needs.',
     content: `<h2>Why Giving ChatGPT Context Matters More Than Asking Better Questions</h2>
