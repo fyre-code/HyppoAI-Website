@@ -1,12 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import ImageLightbox from '@/components/ImageLightbox';
 import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
 import { FlowBorderH, FlowBorderV } from '@/components/FlowBorder';
-import ReviewCarousel from '@/components/ReviewCarousel';
 import { buildMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = buildMetadata({
@@ -18,95 +16,6 @@ export const metadata: Metadata = buildMetadata({
 
 const starPath = "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z";
 
-const fiveStarReviews = [
-  {
-    name: 'Anita Rogers',
-    date: 'February 27, 2026',
-    rating: 5,
-    text: "We are very happy with Joe's level of service! He is easy to get a hold of and explains things clearly.",
-  },
-  {
-    name: 'Brandon Milam',
-    date: 'February 24, 2026',
-    rating: 5,
-    text: "Joe is great and the system is so easy to work! within a week I can already see a difference in my social engagements.",
-  },
-  {
-    name: 'Steven Naeder',
-    date: 'February 24, 2026',
-    rating: 5,
-    text: "Easy, professional, awesome to work with. Thank you for your social media/website/digital knowledge.",
-  },
-  {
-    name: 'Donald Hayes',
-    date: 'February 3, 2026',
-    rating: 5,
-    text: "I have worked with Joseph on some business stuff and can highly recommend him and the companies services.",
-  },
-  {
-    name: "Arturo's Pizza",
-    date: 'January 9, 2026',
-    rating: 5,
-    text: "I am technically challenged but Joseph's asp form is so easy to use. I am very impressed. It's fantastic and helpful. Just try it out. Amazing. I wish I can give 10 stars!",
-  },
-  {
-    name: 'Lori',
-    date: 'December 22, 2025',
-    rating: 5,
-    text: "Joseph and his team are amazing!- patient, respectful and full of knowledge- They really got my business page up and running- I highly recommend this company!",
-  },
-  {
-    name: 'Print Depot',
-    date: 'December 3, 2025',
-    rating: 5,
-    text: "Joe is very friendly and guide for FB posting and Marketing. He has nice system that like just clicks and it will do post on FB automatically.",
-  },
-  {
-    name: 'Lisa Matthews',
-    date: 'December 2, 2025',
-    rating: 5,
-    text: "Hyppo advertising is such a great company! Joseph is an absolute gem! Such a genuine guy who truly takes the time to figure out your business needs and tailors each package accordingly. If you are looking for an integrity ran company for your advertising needs, Hyppo Advertising is where you need to be!",
-  },
-  {
-    name: 'Marshall Paul',
-    date: 'November 25, 2025',
-    rating: 5,
-    text: "Hyppo advertising was wonderful and Joe did a great job explaining everything.",
-  },
-  {
-    name: 'Kitty Barker',
-    date: 'November 25, 2025',
-    rating: 5,
-    text: "I have just started with this company and I will say that Joseph is very professional and very on top of my account.",
-  },
-  {
-    name: 'Steve Payet',
-    date: 'November 19, 2025',
-    rating: 5,
-    text: "Joseph's social media platform is a great concept and works well - I've been using it and really appreciate the Chamber discount he offered. Like any new service, there's still some improvement needed, but the potential is definitely there. I know some people have mentioned concerns about his in-person approach and the Meta glasses he wears, and those points are valid. Still, I believe he deserves a chance to grow and adjust, because the idea behind what he's building can really help small businesses. Overall, solid platform, good value, and I'm hopeful it keeps getting better.",
-  },
-  {
-    name: 'Diane Bryson',
-    date: 'October 15, 2025',
-    rating: 5,
-    text: "I have had many great comments about my posts using this system.",
-  },
-  {
-    name: 'Shane Dooley',
-    date: 'September 30, 2025',
-    rating: 5,
-    text: "We have been using Hyppo Ads for a while now. Been using Joes ASP form for uploading content to social media. Couldn't be easier. I highly recommend their services.",
-  },
-  {
-    name: 'Chanel Manohar',
-    date: 'September 26, 2025',
-    rating: 5,
-    text: "Joe helped me through the setting up my Facebook, Instagram and LinkedIn. He was patient and extremely supportive. Great tech support. Please check out the company. It will make your business less complex for keeping up with social media posts.",
-  },
-];
-
-const aiSummary =
-  "Across 14 five-star Google reviews, customers consistently highlight three things: Joseph's hands-on onboarding, the ASP system's ease of use, and visible engagement growth within weeks. Business owners report saving hours on social media while maintaining a consistent, professional online presence — without logging in, remembering, or posting manually.";
 
 // Add YouTube video IDs and optional start times below. Leave videoId as '' for a placeholder.
 // Use image instead of videoId for static image display.
@@ -239,8 +148,12 @@ export default function ResultsPage() {
             </p>
           </div>
 
-          {/* Review carousel */}
-          <ReviewCarousel reviews={fiveStarReviews} aiSummary={aiSummary} />
+          {/* Reviews embed */}
+          <iframe
+            src="https://hyppohq.io/w/hyppo-ai-reviews?embed=true"
+            style={{ width: '100%', minHeight: '400px', border: 'none' }}
+            allowFullScreen
+          />
         </div>
       </section>
 
