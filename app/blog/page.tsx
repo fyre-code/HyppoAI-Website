@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
-import BlogGrid from '@/components/BlogGrid';
-import { getAllPosts } from '@/lib/posts';
 import { buildMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = buildMetadata({
@@ -13,8 +11,6 @@ export const metadata: Metadata = buildMetadata({
 });
 
 export default function BlogPage() {
-  const posts = getAllPosts();
-
   return (
     <>
       {/* Hero */}
@@ -34,10 +30,15 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Posts grid */}
+      {/* Embedded blog */}
       <section className="bg-[#000000] py-20 px-6">
         <div className="max-w-[1170px] mx-auto">
-          <BlogGrid posts={posts} />
+          <iframe
+            src="https://hyppohq.io/blog/hyppoads-e1f78d65?embed=true"
+            style={{ width: '100%', minHeight: '900px', border: 'none' }}
+            allowFullScreen
+            loading="lazy"
+          />
         </div>
       </section>
     </>
