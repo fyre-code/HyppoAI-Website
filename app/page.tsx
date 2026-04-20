@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ImageLightbox from '@/components/ImageLightbox';
 import ReviewsGrid from '@/components/ReviewsGrid';
+import ReviewModal from '@/components/ReviewModal';
 import { buildMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = buildMetadata({
@@ -200,14 +201,7 @@ export default function HomePage() {
             <p className="text-[#000000] text-[21px] font-semibold">
               4.5 · 16 reviews on Google
             </p>
-            <a
-              href="https://api.hyppocrm.com/widget/form/yc6FXLyl26JutgEumIx2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary mt-4 inline-block"
-            >
-              Write a Review
-            </a>
+            <ReviewModal />
           </div>
 
           {/* Reviews Grid — sorted newest first, ties broken by enthusiasm */}
