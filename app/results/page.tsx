@@ -112,9 +112,6 @@ export default function ResultsPage() {
           <h2 className="text-5xl md:text-8xl font-bold text-[#000000] text-center mb-2">
             Testimonials
           </h2>
-          <p className="text-[#000000] text-[21px] text-center mb-12">
-            What our Customers Say
-          </p>
 
           {/* Reviews embed */}
           <iframe
