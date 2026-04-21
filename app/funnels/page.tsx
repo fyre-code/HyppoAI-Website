@@ -1,8 +1,8 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import ImageLightbox from '@/components/ImageLightbox';
+import GrayAccentBorder from '@/components/GrayAccentBorder';
 import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import { FlowBorderH, FlowBorderV } from '@/components/FlowBorder';
@@ -64,8 +64,9 @@ export default function FunnelsPage() {
       </section>
 
       {/* Options */}
-      <section className="bg-[#c9c9c9] on-gray py-20 px-6">
-        <div className="max-w-[1170px] mx-auto">
+      <section className="relative overflow-hidden bg-white py-20 px-6">
+        <GrayAccentBorder />
+        <div className="relative z-10 max-w-[1170px] mx-auto">
           <FlowBorderH />
           <div className="grid grid-cols-[6px_1fr_6px]">
             <FlowBorderV />
