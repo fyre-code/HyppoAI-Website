@@ -172,7 +172,7 @@ export default function HomePage() {
           {/* Reviews embed */}
           <iframe
             src="https://hyppohq.io/w/hyppo-ai-reviews?embed=true"
-            style={{ width: '100%', minHeight: '400px', border: 'none' }}
+            style={{ width: '100%', minHeight: '1200px', border: 'none' }}
             allowFullScreen
           />
         </div>
