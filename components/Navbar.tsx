@@ -86,17 +86,29 @@ export default function Navbar() {
           <Link href="/" onClick={() => setMobileOpen(false)} className="hover:text-[#2cd9fe]">Home</Link>
           <Link href="/about" onClick={() => setMobileOpen(false)} className="hover:text-[#2cd9fe]">About</Link>
           <div>
-            <p className="text-xs uppercase tracking-widest text-[#555] mb-2">Systems</p>
-            {systemsLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="block py-1 hover:text-[#2cd9fe]"
-              >
-                {link.label}
-              </Link>
-            ))}
+            <button
+              onClick={() => setSystemsOpen(!systemsOpen)}
+              className="flex items-center gap-2 w-full text-white hover:text-[#2cd9fe] transition-colors"
+            >
+              Services
+              <svg className={`w-3 h-3 transition-transform ${systemsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {systemsOpen && (
+              <div className="mt-2 pl-4 flex flex-col gap-2 border-l border-[#2a2a2a]">
+                {systemsLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => { setMobileOpen(false); setSystemsOpen(false); }}
+                    className="hover:text-[#2cd9fe] transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
           <Link href="/results" onClick={() => setMobileOpen(false)} className="hover:text-[#2cd9fe]">Results</Link>
           <Link href="/contact" onClick={() => setMobileOpen(false)} className="hover:text-[#2cd9fe]">Contact</Link>
