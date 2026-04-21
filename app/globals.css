@@ -54,12 +54,20 @@
     background-color: #2cd9fe;
     color: #000000;
     font-weight: 700;
-    padding: 1.5rem 4rem;
+    padding: 0.75rem 2rem;
     border: 1px solid #2cd9fe;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    font-size: 1.875rem;
+    font-size: 1rem;
+    white-space: nowrap;
     transition: background-color 0.2s, color 0.2s;
+  }
+
+  @media (min-width: 768px) {
+    .btn-primary {
+      padding: 1.5rem 4rem;
+      font-size: 1.875rem;
+    }
   }
 
   .btn-primary:hover {
