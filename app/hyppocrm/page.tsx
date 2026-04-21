@@ -1,12 +1,9 @@
-import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import ImageLightbox from '@/components/ImageLightbox';
 import { HeroText } from '@/components/AnimatedSection';
 import CircuitBackground from '@/components/CircuitBackground';
 import GrayAccentBorder from '@/components/GrayAccentBorder';
-import { FlowBorderH } from '@/components/FlowBorder';
 
 import { buildMetadata } from '@/lib/seo';
 
@@ -47,33 +44,15 @@ export default function HyppoCRMPage() {
             Every lead organized. Every follow-up handled. Nothing missed.
           </h2>
           <div>
-            {[
-              {
-                subheading: <>Hyppo<span className="text-[#2cd9fe]">CRM</span> Basic</>,
-                text: 'HyppoCRM Basic gives you one place to capture, organize, and manage all leads, jobs, and payments without spreadsheets, sticky notes, or scattered tools.',
-                image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775750016936_hyppocrm-basic-automated-workflow-dashboard.png',
-                alt: 'HyppoCRM Basic workflow illustration demonstrating a simplified business automation sequence, featuring integrated modules for tracking tasks, financial data, and performance analytics.',
-              },
-              {
-                subheading: <>Hyppo<span className="text-[#2cd9fe]">CRM</span> Plus</>,
-                text: 'HyppoCRM Plus adds automated email and SMS follow-up so leads are contacted instantly and consistently without manual outreach.',
-                image: 'https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775750150298_hyppocrm-plus-advanced-automation-lead-funnel.png',
-                alt: 'HyppoCRM Plus advanced automation workflow illustrating high-volume lead capture and automated multi-channel distribution for SMS and email marketing campaigns.',
-              },
-            ].map((row, i) => (
-              <React.Fragment key={i}>
-              {i > 0 && <FlowBorderH />}
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="p-10 flex flex-col gap-4 justify-center">
-                  <h3 className="text-[28px] md:text-[48px] font-bold text-[#000000] text-center">{row.subheading}</h3>
-                  <p className="text-[#000000] text-[21px] leading-relaxed">{row.text}</p>
-                </div>
-                <div className="p-10 flex items-center justify-center relative">
-                  <ImageLightbox src={row.image} alt={(row as {alt?: string}).alt ?? String(row.subheading)} width={500} height={400} className="object-contain w-full h-auto" />
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="p-10 flex flex-col gap-4 justify-center">
+                <h3 className="text-[28px] md:text-[48px] font-bold text-[#000000] text-center">Hyppo<span className="text-[#2cd9fe]">CRM</span></h3>
+                <p className="text-[#000000] text-[21px] leading-relaxed">HyppoCRM gives you one place to capture, organize, and manage all leads, jobs, and payments without spreadsheets, sticky notes, or scattered tools. Plus, get automated email and SMS follow-up so leads are contacted instantly and consistently without manual outreach.</p>
               </div>
-              </React.Fragment>
-            ))}
+              <div className="p-10 flex items-center justify-center relative">
+                <ImageLightbox src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/a4cdd6b1-7743-45cd-a401-9559302cf8e4/root/1775750016936_hyppocrm-basic-automated-workflow-dashboard.png" alt="HyppoCRM workflow illustration demonstrating a simplified business automation sequence, featuring integrated modules for tracking tasks, financial data, and performance analytics." width={500} height={400} className="object-contain w-full h-auto" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
