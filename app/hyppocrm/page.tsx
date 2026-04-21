@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageLightbox from '@/components/ImageLightbox';
 import { HeroText } from '@/components/AnimatedSection';
+import GrayAccentBorder from '@/components/GrayAccentBorder';
 import CircuitBackground from '@/components/CircuitBackground';
 
 import { buildMetadata } from '@/lib/seo';
@@ -37,6 +38,7 @@ export default function HyppoCRMPage() {
       </section>
 
       <section className="relative overflow-hidden bg-white py-20 px-6 border-b border-[#1a1a1a]">
+        <GrayAccentBorder />
         <div className="relative z-10 max-w-[1170px] mx-auto">
           <h2 className="text-5xl md:text-8xl font-bold text-[#000000] text-center mb-12">
             Every lead organized. Every follow-up handled. Nothing missed.
